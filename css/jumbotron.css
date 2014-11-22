@@ -1,0 +1,33 @@
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+img {
+	width: 100%;
+}
+
+.jumbotron {
+	padding: 20px;
+}
+
+.no-wrap-heading {
+ 	white-space: nowrap;
+  	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.summary-description {
+	height: 100px;
+  	overflow: hidden;
+ 	text-overflow: ellipsis;
+}
+
+.imgcontainer {
+	position: relative;
+}
+
+body
+{
+	overflow-y: scroll;
+}
