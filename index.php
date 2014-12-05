@@ -1,6 +1,6 @@
 <?php 
-  $siteroot = "//localhost/met-filab-conf";
-  $pageroot = "/Users/mraaa711128/ownCloud/Project/Web/met-filab-conf";
+  include("rootpath.php");
+
   $page = $_GET["page"];
   $announce = $_GET["announce"];
   $member = $_GET["member"];
