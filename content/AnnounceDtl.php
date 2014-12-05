@@ -21,10 +21,5 @@
         	<p><?= $content ?></p>
     	</div>
 	</div>
-</div>
-<div class="container">
- 	<hr />
- 	<footer>
-    	<p>&copy; Metropolitain FiLab 2014</p>
-    </footer>
+	<hr />
 </div>

@@ -1,0 +1,12 @@
+{
+	"Name":"Irena Vodenska",
+	"Image":"irena.jpg",
+	"Acadames":[{"Title":"PhD, Boston University"},
+			   {"Title":"MBA, Vanderbilt University"},
+			   {"Title":"MS, BS, University of Belgrade"}],
+	"Interests":[{"Description":"Comparison between volatility return intervals of the S&P 500 index and two common models"},
+				 {"Description":"Relation between volatility correlation in financial markets and Omori processes"},
+				 {"Description":"Global implications of Financial Institution investment strategies"},
+				 {"Description":"Enterprise size and industry sector impact on the correlations between corporate profitability and executive compensations"},
+				 {"Description":"Corporate Governance Networks: Relation between levels of connectivity of corporate board directors and their spheres of influence"}]
+}

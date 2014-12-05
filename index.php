@@ -3,6 +3,7 @@
   $pageroot = "/Users/mraaa711128/ownCloud/Project/Web/met-filab-conf";
   $page = $_GET["page"];
   $announce = $_GET["announce"];
+  $member = $_GET["member"];
   $page = ($page == "" ? "Home" : $page);
 
   function read_announce_list($max) {
@@ -24,6 +25,33 @@
 
   function read_announce_content($filename) {
     $filepath = $GLOBALS["pageroot"] . "/assest/announce/" . $filename; 
+    if (file_exists($filepath) == true && is_dir($filepath) == false) {
+      $strContent = file_get_contents($filepath);
+      return json_decode($strContent, true);
+    } else {
+      return null;
+    }
+  }
+
+  function read_member_list($max) {
+    $filepath = $GLOBALS["pageroot"] . "/assest/member/";
+    $arrMembers = scandir($filepath, SCANDIR_SORT_ASCENDING);
+    $count = 0;
+    $arrReturn = [];
+    for ($i = 0; $i < count($arrMembers); $i++) {
+      $filename = $arrMembers[$i];
+      if ($filename != ".." && $filename != "." && is_dir($filename) == false) {
+        if ($count < $max) {
+          array_push($arrReturn,$filename);
+          $count++;
+        }
+      }
+    }
+    return $arrReturn;
+  }
+
+  function read_member_content($filename) {
+    $filepath = $GLOBALS["pageroot"] . "/assest/member/" . $filename; 
     if (file_exists($filepath) == true && is_dir($filepath) == false) {
       $strContent = file_get_contents($filepath);
       return json_decode($strContent, true);
@@ -78,6 +106,8 @@
           <ul class="nav navbar-nav">
             <li class="<?= ($page == "Home" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Home">Home</a></li>
             <li class="<?= ($page == "Announce" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Announce">Announce</a></li>
+            <li class="<?= ($page == "Schedule" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Schedule">Program & Schedule</a></li>
+            <li class="<?= ($page == "Commitee" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Commitee">Commitee</a></li>
             <li class="<?= ($page == "Intro" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Intro">Introduction</a></li>
             <li class="<?= ($page == "Contact" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Contact">Contact</a></li>
             <li class="dropdown">
@@ -86,10 +116,14 @@
                 <li><a href="<?= $siteroot ?>/index.php?page=Location">Location</a></li>
                 <li><a href="<?= $siteroot ?>/index.php?page=Hotel">Hotel</a></li>
                 <li><a href="<?= $siteroot ?>/index.php?page=Santorini">Santorini and Greece</a></li>
+                <!--
+                <li><a href="<?= $siteroot ?>/index.php?page=Map">Tourism Map</a></li>
+                -->
                 <li class="divider"></li>
                 <li class="dropdown-header">More Info ...</li>
                 <li><a href="http://www.visitgreece.gr/en/greek_islands/cyclades/santorini" target = "_blank">Santorini Tourism Official Website</a></li>
                 <li><a href="http://www.visitgreece.gr" target = "_blank">Greece Tourism Official Website</a></li>
+                <li><a href="http://www.greekhotel.com/greekislands/maps/santorini/map.html" target="_blank">Tourism Map</a></li>
               </ul>
             </li>
           </ul>
@@ -101,11 +135,17 @@
     <?php 
         if ($announce != "") {
           include($pageroot . "/content/AnnounceDtl.php");
+        } elseif ($member != "") {
+          include($pageroot . "/content/CommiteeDtl.php");
         } else {
           include($pageroot . "/content/" . $page . ".php");    
         }
     ?>
-
+    <div class="container">
+      <footer>
+        <p>&copy; Metropolitain FiLab 2014</p>
+      </footer>
+    </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

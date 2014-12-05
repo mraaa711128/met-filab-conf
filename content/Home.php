@@ -56,9 +56,10 @@
         -->
       </div>
 
-      <hr>
-
+      <hr />
+<!--
       <footer>
         <p>&copy; Metropolitain FiLab 2014</p>
       </footer>
+-->
     </div> <!-- /container -->
