@@ -15,14 +15,14 @@
 			<img class="img-circle" src="<?= $siteroot?>/img/irena.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
 			<br />
          	<br />
-         	<p><a class="btn btn-default" style="width: 140px;" href="mailto://vodenska@bu.edu" role="button">e-mail »</a></p>
+         	<p><a class="btn btn-default" style="width: 140px;" href="mailto:vodenska@bu.edu" role="button">e-mail »</a></p>
 		</div>
 		<div class="col-lg-4 col-lg-offset-1">
 			<h3>This Website</h3>
 			<img class="img-circle" src="<?= $siteroot?>/img/admin.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
          	<br />
          	<br />
-         	<p><a class="btn btn-default" style="width: 140px;" href="mailto://mraaa@bu.edu" role="button">e-mail »</a></p>
+         	<p><a class="btn btn-default" style="width: 140px;" href="mailto:mraaa@bu.edu" role="button">e-mail »</a></p>
 		</div>
 
 	</div>
