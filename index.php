@@ -70,7 +70,7 @@
     <meta name="author" content="">
     <link rel="icon" href="<?= $siteroot ?>/img/favicon.ico">
 
-    <title>Met Filab Conference</title>
+    <title>BDS-ECS Conference</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?= $siteroot ?>/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -100,7 +100,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <div class="navbar-brand">2014 Met-FiLab Conference</div>
+          <div class="navbar-brand">BDS-ECS Conference</div>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -143,7 +143,7 @@
     ?>
     <div class="container">
       <footer>
-        <p>&copy; Metropolitain FiLab 2014</p>
+        <p>&copy; Boston University FiLab 2014</p>
       </footer>
     </div>
     <!-- Bootstrap core JavaScript

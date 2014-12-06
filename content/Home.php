@@ -8,14 +8,16 @@
       -->
         <div class="imgcontainer">
           <img src="<?= $siteroot ?>/img/conference1.png">
-          <h1 style="position: absolute; top: 0px; right: 0px; color: white; text-align: right;">
-            Big Data Science & Economic
+          <h1>
+            <span style="position: absolute; top: 0px; color: #1F69DF; ">Big Data </span>
+            <span style="position: absolute; top: 0px; right: 0px; color: white; text-align: right;">Science & Economic Complex</span>
           </h1>
-          <h1 style="position: absolute; top: 65px; right: 0px; color: white; text-align: right;">
-            Complex Systems 2015
+          <h1>
+            <span style="position: absolute; top: 65px; left: 200px; color: #1F69DF; ">Systems </span>
+            <span style="position: absolute; top: 65px; right: 0px; color: white; text-align: right;">Conference (BDS-ECS)</span>
           </h1>
           <h1 style="position: absolute; top: 130px; right: 0px; color: white; text-align: right;">
-            July 21 - 24
+            2015 July 21 - 24
           </h1>
         </div>
       </div>
