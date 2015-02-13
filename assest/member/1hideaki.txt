@@ -1,3 +1,5 @@
 {
-	"Name":"Hideaki Aovama"
+	"Name":"Hideaki Aoyama",
+	"Affiliation":"Kyoto University, Kyoto, Japan",
+	"Email":"hideaki.aoyama@gmail.com"
 }

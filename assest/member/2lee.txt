@@ -1,3 +1,5 @@
 {
-	"Name":"Duk Hee Lee"
+	"Name":"Duk Hee Lee",
+	"Affiliation":"KAIST, Daejeon, S. Korea",
+	"Email":"dukheelee@kaist.ac.kr"
 }

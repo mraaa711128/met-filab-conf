@@ -1,0 +1,5 @@
+{
+	"Name":"Dimitar Trajanov",
+	"Affiliation":"University of Sts. Cyril and Methodius, Skopje, Macedonia",
+	"Email":"dimitar.trajanov@finki.ukim.mk"
+}

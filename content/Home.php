@@ -7,8 +7,8 @@
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
       -->
         <div class="imgcontainer">
-          <img src="<?= $siteroot ?>/img/conference1.png">
-          <h1>
+          <img src="<?= $siteroot ?>/img/conference2.png">
+<!--           <h1>
             <span style="position: absolute; top: 0px; color: #1F69DF; ">Big Data </span>
             <span style="position: absolute; top: 0px; right: 0px; color: white; text-align: right;">Science & Economic Complex</span>
           </h1>
@@ -18,7 +18,7 @@
           </h1>
           <h1 style="position: absolute; top: 130px; right: 0px; color: white; text-align: right;">
             2015 July 21 - 24
-          </h1>
+          </h1> -->
         </div>
       </div>
     </div>

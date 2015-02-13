@@ -1,6 +1,8 @@
 {
 	"Name":"Irena Vodenska",
 	"Image":"irena.jpg",
+	"Affiliation":"Boston University, Boston, U.S.A.",
+	"Email":"Vodenska@bu.edu",
 	"Acadames":[{"Title":"PhD, Boston University"},
 			   {"Title":"MBA, Vanderbilt University"},
 			   {"Title":"MS, BS, University of Belgrade"}],

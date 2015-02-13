@@ -114,16 +114,18 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="<?= $siteroot ?>/index.php?page=Location">Location</a></li>
-                <li><a href="<?= $siteroot ?>/index.php?page=Hotel">Hotel</a></li>
-                <li><a href="<?= $siteroot ?>/index.php?page=Santorini">Santorini and Greece</a></li>
+                <li><a href="http://www.metropol-ohrid.com.mk/EN/default.aspx" target="_blank">Hotel</a></li>
+                <li><a href="<?= $siteroot ?>/index.php?page=Ohrid">Ohrid</a></li>
+                <li><a href="<?= $siteroot ?>/index.php?page=Macedonia">Macedonia & Skopje</a></li>
+                
                 <!--
                 <li><a href="<?= $siteroot ?>/index.php?page=Map">Tourism Map</a></li>
                 -->
                 <li class="divider"></li>
                 <li class="dropdown-header">More Info ...</li>
-                <li><a href="http://www.visitgreece.gr/en/greek_islands/cyclades/santorini" target = "_blank">Santorini Tourism Official Website</a></li>
-                <li><a href="http://www.visitgreece.gr" target = "_blank">Greece Tourism Official Website</a></li>
-                <li><a href="http://www.greekhotel.com/greekislands/maps/santorini/map.html" target="_blank">Tourism Map</a></li>
+                <li><a href="http://www.ohrid.com.mk/routes/routes.asp?ID=392" target = "_blank">Ohrid Tourism Official Website</a></li>
+                <li><a href="http://www.skopje.gov.mk/en/" target="_blank">Skopje Official Website</a></li>
+                <li><a href="http://www.tourismmacedonia.gov.mk/en/" target = "_blank">Macedonia Tourism Official Website</a></li>
               </ul>
             </li>
           </ul>
