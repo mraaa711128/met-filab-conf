@@ -1,32 +1,37 @@
 <div class="jumbotron">
   <div class="container">
-    <h1>Organizing Commitee 2015</h1>
+    <h1 class="page-header">Organizing Commitee 2015</h1>
     <p></p>
     <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
   </div>
 </div>
 <div class="container">
-	<div class="row">
-		<?php $arrMembers = read_member_list(4) ?>
-		<?php for ($i=0; $i < count($arrMembers); $i++):
-					$memberObj = read_member_content($arrMembers[$i]);
-					if (is_null($memberObj) == false) {
-						$name = $memberObj["Name"];
-						$img = $memberObj["Image"];
-						$affiliation = $memberObj["Affiliation"];
+    <?php $arrMembers = read_member_list(4) ?>
+    <?php for ($i=0; $i < count($arrMembers); $i++):
+        $memberObj = read_member_content($arrMembers[$i]);
+        if (is_null($memberObj) == false) {
+            $name = $memberObj["Name"];
+            $img = $memberObj["Image"];
+            $affiliation = $memberObj["Affiliation"];
             $email = $memberObj["Email"];
-						//$file = str_replace(".txt", "", $arrMembers[$i]);
-						//$interests = $memberObj["Interests"];
-					}
-		?>
-		<div class="col-lg-3">
+            //$file = str_replace(".txt", "", $arrMembers[$i]);
+            //$interests = $memberObj["Interests"];
+        }
+    ?>
+    <?php 
+        if ($i % 2 == 0) {            
+    ?>
+	<div class="row">
+    <?php 
+        }
+    ?>
+		<div class="col-xs-5">
          	<img class="img-circle" src="<?= $siteroot?>/img/<?= $img ?>" alt="Generic placeholder image" style="width: 140px; height: 140px;">
          	<h2><?= $name ?></h2>
       		<p><?= $affiliation ?></p>
       		<br />
          	<p><a class="btn btn-default" href="mailto:<?= $email ?>" role="button">E-Mail »</a></p>
         </div>
-    	<?php endfor; ?>
     	<!--
         <div class="col-lg-4">
          	<img class="img-circle" src="" alt="Generic placeholder image" style="width: 140px; height: 140px;">
@@ -41,6 +46,12 @@
          	<p><a class="btn btn-default" href="#" role="button">details »</a></p>
         </div>
     	-->
+    <?php 
+        if ($i % 2 != 0) {            
+    ?>
 	</div>
-	<hr />
+    <?php 
+        }
+    ?>
+    <?php endfor; ?>
 </div>

@@ -7,8 +7,9 @@ img {
 	width: 100%;
 }
 
-.jumbotron {
-	padding: 20px;
+.container .jumbotron, .container-fluid .jumbotron {
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .no-wrap-heading {
@@ -30,4 +31,18 @@ img {
 body
 {
 	overflow-y: scroll;
+}
+
+.panel, .panel-default {
+	border-width: 0px;
+}
+
+.list-group, .list-group-item {
+	border-width: 0px;
+	margin-bottom: 0px;
+}
+
+.jumbotron .page-header {
+	font-size: 48px;
+	margin: 0 0 0 0;
 }

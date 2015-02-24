@@ -1,0 +1,7 @@
+{
+	"Subject":"Announce Feature Test ",
+	"Date":"2015-02-23",
+	"Time":"21:23",
+	"Author":"System Admin",
+	"Content":"This message is used for test the announcement system. It was wriiten by Stanley Chiang. The announcement system will start on-line and working on March !"
+}

@@ -1,7 +1,0 @@
-{
-	"Subject":"Asian shares take comfort from U.S. data, yen rebounds.",
-	"Date":"2014-11-21",
-	"Time":"02:10",
-	"Author":"System Admin",
-	"Content":"TOKYO (Reuters) - Most Asian stock markets rose on Friday on data showing broad U.S. economic strength, while the yen rebounded from overnight multi-year lows after a Japanese official expressed concern about the pace of its recent descent. MSCI's broadest index of Asia-Pacific shares outside Japan was up about 0.2 percent, though on track for a weekly loss of over 1 percent. It was underpinned by record finishes by the Dow Jones industrial average (.DJI) and S&P 500 (.SPX) after a spate of upbeat U.S. data contrasted with signs of spreading weakness in China and Europe. Initial U.S. weekly jobless claims fell, factory activity in the U.S. mid-Atlantic region grew at its fastest pace in two decades and existing home sales strengthened."
-}

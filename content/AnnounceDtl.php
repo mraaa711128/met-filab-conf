@@ -21,5 +21,4 @@
         	<p><?= $content ?></p>
     	</div>
 	</div>
-	<hr />
 </div>

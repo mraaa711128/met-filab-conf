@@ -7,7 +7,7 @@
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
       -->
         <div class="imgcontainer">
-          <img src="<?= $siteroot ?>/img/conference2.png">
+          <img src="<?= $siteroot ?>/img/conference3.png">
 <!--           <h1>
             <span style="position: absolute; top: 0px; color: #1F69DF; ">Big Data </span>
             <span style="position: absolute; top: 0px; right: 0px; color: white; text-align: right;">Science & Economic Complex</span>
@@ -25,7 +25,7 @@
 
     <div class="container">
       <!-- Example row of columns -->
-      <div class="row">
+<!--       <div class="row">
         <?php 
           $arrAnnounces = read_announce_list(3);
           for ($i = 0; $i < count($arrAnnounces); $i++) {
@@ -35,7 +35,7 @@
               $content = $announceObj["Content"];
               $file = str_replace(".txt", "", $arrAnnounces[$i]);
         ?>
-        <div class="col-md-4">
+        <div class="col-xs-4">
           <h2 class="no-wrap-heading"><?= $subject; ?> ...</h2>
           <p class="summary-description"><?= $content; ?> ...</p>
           <p><a class="btn btn-default" href="<?= $siteroot ?>/index.php?page=Announce&announce=<?= $file ?>" role="button">View details &raquo;</a></p>
@@ -44,7 +44,7 @@
             }
           }
         ?>
-        <!--
+        
         <div class="col-md-4">
           <h2>Heading</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
@@ -55,10 +55,9 @@
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
-        -->
-      </div>
+        
+      </div> -->
 
-      <hr />
 <!--
       <footer>
         <p>&copy; Metropolitain FiLab 2014</p>

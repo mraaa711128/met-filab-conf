@@ -14,5 +14,4 @@
 			<iframe width="800px" height="1000px" style ="border: 0;" frameborder="0" src="http://www.greekhotel.com/greekislands/maps/santorini/map.html"></iframe>
 		</div>
 	</div>
-	<hr />
 </div>
