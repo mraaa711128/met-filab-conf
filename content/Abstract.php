@@ -49,28 +49,28 @@
 </div>
 <!-- 
 <script>
-	// $(document).ready(function() {
-	// 	$("#inputFileUpload").uploadFile({
-	// 		url:"<?= $siteroot ?>/php/upload.php",
-	// 		filename:"myfile",
-	// 		allowedTypes:"pdf,doc,docx",
-	// 		showProgress:true,
-	// 		uploadButtonClass:"btn btn-primary",
-	// 		uploadFolder:"<?= $pageroot ?>/upload/",
-	// 		// onSubmit: function (files, xhr) {
-	// 		// 	for (var i = files.length - 1; i >= 0; i--) {
-	// 		// 		$("#inputLastName").val(files[i] + ",");
-	// 		// 	};
-	// 		// },
-	// 		// onSuccess: function (files, response, xhr, pd) {
-	// 		// 	for (var i = files.length - 1; i >= 0; i--) {
-	// 		// 		$("#inputFirstName").val(response + ",");
-	// 		// 	};
-	// 		// },
-	// 		// onError: function (files, status, message, pd) {
-	// 		// 	$("#inputFirstName").val(message);
-	// 		// }
-	// 	});
-	// });
+// 	$(document).ready(function() {
+// 		$("#inputFileUpload").uploadFile({
+// 			url:"<?= $siteroot ?>/php/upload.php",
+// 			filename:"myfile",
+// 			allowedTypes:"pdf,doc,docx",
+// 			showProgress:true,
+// 			uploadButtonClass:"btn btn-primary",
+// 			uploadFolder:"<?= $pageroot ?>/upload/",
+// 			// onSubmit: function (files, xhr) {
+// 			// 	for (var i = files.length - 1; i >= 0; i--) {
+// 			// 		$("#inputLastName").val(files[i] + ",");
+// 			// 	};
+// 			// },
+// 			// onSuccess: function (files, response, xhr, pd) {
+// 			// 	for (var i = files.length - 1; i >= 0; i--) {
+// 			// 		$("#inputFirstName").val(response + ",");
+// 			// 	};
+// 			// },
+// 			// onError: function (files, status, message, pd) {
+// 			// 	$("#inputFirstName").val(message);
+// 			// }
+// 		});
+// 	});
 </script>
  -->
