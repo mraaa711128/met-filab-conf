@@ -77,10 +77,15 @@
 
     <!-- Custom styles for this template -->
     <link href="<?= $siteroot ?>/css/jumbotron.css" rel="stylesheet">
-
+    <link href="<?= $siteroot ?>/css/uploadfile.css" rel="stylesheet">
+    
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="<?= $siteroot ?>/js/ie-emulation-modes-warning.js"></script>
+    <!--<script src="<?= $siteroot ?>/js/ie-emulation-modes-warning.js"></script>-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="<?= $siteroot ?>/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?= $siteroot ?>/js/jquery.uploadfile.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -105,14 +110,18 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="<?= ($page == "Home" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Home">Home</a></li>
-            <li class="<?= ($page == "Announce" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Announce">Announce</a></li>
-            <li class="<?= ($page == "Schedule" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Schedule">Program & Schedule</a></li>
-            <li class="<?= ($page == "Commitee" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Commitee">Commitee</a></li>
             <li class="<?= ($page == "Intro" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Intro">Introduction</a></li>
-            <li class="<?= ($page == "Contact" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Contact">Contact</a></li>
+            <li class="<?= ($page == "Announce" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Announce">Announce</a></li>
+            <li class="<?= ($page == "Schedule" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Schedule">Schedule</a></li>
+            <li class="<?= ($page == "Commitee" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Commitee">Commitee</a></li>
+            <li class="<?= ($page == "Register" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Register">Registration</a></li>
+            <li class="<?= ($page == "Abstract" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Abstract">Abstract Submission</a></li>
+            <li class="<?= ($page == "Reservation" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Reservation">Hotel Reservation</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">Conference ...</li>
+                <li class="<?= ($page == "Contact" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Contact">Contact Info</a></li>
                 <li><a href="<?= $siteroot ?>/index.php?page=Location">Location</a></li>
                 <li><a href="http://www.metropol-ohrid.com.mk/EN/default.aspx" target="_blank">Hotel</a></li>
                 <li><a href="<?= $siteroot ?>/index.php?page=Ohrid">Ohrid</a></li>
@@ -133,16 +142,30 @@
       </div>
     </nav>
 
-    <!-- Include Content Php by Different Page -->
-    <?php 
-        if ($announce != "") {
-          include($pageroot . "/content/AnnounceDtl.php");
-        } elseif ($member != "") {
-          include($pageroot . "/content/CommiteeDtl.php");
-        } else {
-          include($pageroot . "/content/" . $page . ".php");    
-        }
-    ?>
+    <div class="container">
+      <div class="row">
+      <div class="col-md-9">
+        <!-- Include Content Php by Different Page -->
+        <?php 
+          if ($announce != "") {
+            include($pageroot . "/content/AnnounceDtl.php");
+          } elseif ($member != "") {
+            include($pageroot . "/content/CommiteeDtl.php");
+          } else {
+            include($pageroot . "/content/" . $page . ".php");    
+          }
+        ?>
+      </div>
+      <div class="col-md-3">
+        <?php
+          include($pageroot . "/content/AnnounceList.php");
+        ?>
+      </div>
+      </div>
+    </div>
+
+    <hr />
+
     <div class="container">
       <footer>
         <p>&copy; Boston University FiLab 2014</p>
@@ -151,8 +174,6 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="<?= $siteroot ?>/bootstrap/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="<?= $siteroot ?>/js/ie10-viewport-bug-workaround.js"></script>
   </body>
