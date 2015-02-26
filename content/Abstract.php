@@ -66,8 +66,8 @@
 		maxFilesNum: 5,
 		uploadExtraData: function() {
 			var exData = {};
-			exData['first_name'] = $("#inputFirstName").val();
-			exData['last_name'] = $("#inputLastName").val();
+			exData["firstname"] = $("#inputFirstName").val();
+			exData["lastname"] = $("#inputLastName").val();
 			return exData;
 		},
 		elErrorContainer: "#inputUploadError"
