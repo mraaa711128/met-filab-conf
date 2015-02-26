@@ -1,6 +1,8 @@
 <?php
 include("../rootpath.php");
 
+header('Content-Type: application/json');
+
 $output_dir = $pageroot . DS . "upload";
 
 if(isset($_FILES["upload_file"]))
