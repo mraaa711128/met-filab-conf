@@ -60,8 +60,8 @@ if(isset($_FILES["upload_file"]))
 			}
 		}
 	    echo json_encode($ret);
-	} catch (Exception ex) {
-		echo json_encode(array('error' => ex->getMessage()));
+	} catch (Exception $ex) {
+		echo json_encode(array('error' => $ex->getMessage()));
 	}
 } else {
  	echo json_encode(array('error' => 'No file be uploaded !'));
