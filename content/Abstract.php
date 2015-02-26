@@ -11,6 +11,12 @@
 			<div class="page-header">
 				<h3>Information about Abstract Submission</h3>
 			</div>
+			<div class="alert alert-warning" role="alert">
+				<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+		  		<span>Warning:</span>
+				<p>Only when you input your <strong>First Name and Last Name</strong>, then you can select files to upload !!</p>
+				<p>Each time you can have up to <strong>5 files</strong> upload, and each file can have up to <strong>10 MB</strong> file size !!</p>
+			</div>
 			<div class="col-md-7">
 				<div class="form-horizontal">
 					<div class="form-group">
@@ -67,16 +73,16 @@
 		elErrorContainer: "#inputUploadError"
 	});
 
-	$("#inputFirstName").change(function(eventObject) {
-		if (this.val() != "") {
+	$("#inputFirstName").keypress(function() {
+		if ($(this).val() != "") {
 			$("#inputFileUpload").fileinput('enable');
 		} else {
 			$("#inputFileUpload").fileinput('disable');
 		};
 	});
 
-	$("#inputLastName").change(function(eventObject) {
-		if (this.val() != "") {
+	$("#inputLastName").keypress(function() {
+		if ($(this).val() != "") {
 			$("#inputFileUpload").fileinput('enable');
 		} else {
 			$("#inputFileUpload").fileinput('disable');
@@ -84,6 +90,7 @@
 	});
 	
 	$(document).ready(function() {
+		$("#inputFileUpload").fileinput('disable');
 		// $("#inputFileUpload").uploadFile({
 		// 	url:"<?= $siteroot ?>/php/upload.php",
 		// 	fileName:"upload_file",
