@@ -33,7 +33,7 @@
             },
             maxFileSize: -1,
             maxFileCount: -1,
-            multiple: true,
+            multiple: false,
             dragDrop: true,
             autoSubmit: true,
             showCancel: true,
@@ -334,7 +334,7 @@
                 else fileNameStr = files[i].name;
 
                 pd.filename.html(fileNameStr);
-                var form = $("<form style='display:block; position:absolute;left: 150px;' class='" + obj.formGroup + "' method='" + s.method + "' action='" +
+                var form = $("<form style='display:block; position:absolute;left: 150px;' class='" + obj.formGroup  + "' method='" + s.method + "' action='" +
                     s.url + "' enctype='" + s.enctype + "'></form>");
                 form.appendTo('body');
                 var fileArray = [];
