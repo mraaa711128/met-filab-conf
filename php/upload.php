@@ -1,6 +1,6 @@
 <?php
 define('DS', DIRECTORY_SEPARATOR);
-$output_dir = "<?= $pageroot ?>/upload";
+$output_dir = $pageroot . DS . "upload";
 if(isset($_FILES["upload_file"]))
 {
 	try {
