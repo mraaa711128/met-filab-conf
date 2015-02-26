@@ -67,7 +67,7 @@ if(isset($_FILES["upload_file"]))
  	echo json_encode(array('error' => 'No file be uploaded !'));
 }
 
-private function codeToMessage($code) { 
+function codeToMessage($code) { 
     switch ($code) { 
         case UPLOAD_ERR_INI_SIZE: 
             $message = "The uploaded file exceeds the upload_max_filesize directive in php.ini"; 
