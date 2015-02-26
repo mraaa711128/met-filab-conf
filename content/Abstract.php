@@ -67,6 +67,22 @@
 		elErrorContainer: "#inputUploadError"
 	});
 
+	$("#inputFirstName").change(function(eventObject) {
+		if (this.val() != "") {
+			$("#inputFileUpload").fileinput('enable');
+		} else {
+			$("#inputFileUpload").fileinput('disable');
+		};
+	});
+
+	$("#inputLastName").change(function(eventObject) {
+		if (this.val() != "") {
+			$("#inputFileUpload").fileinput('enable');
+		} else {
+			$("#inputFileUpload").fileinput('disable');
+		};
+	});
+	
 	$(document).ready(function() {
 		// $("#inputFileUpload").uploadFile({
 		// 	url:"<?= $siteroot ?>/php/upload.php",
