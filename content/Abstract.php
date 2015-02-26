@@ -12,7 +12,7 @@
 				<h3>Information about Abstract Submission</h3>
 			</div>
 			<div class="col-md-7">
-<!-- 				<form class="form-horizontal">
+				<div class="form-horizontal">
 					<div class="form-group">
 						<label for="inputFirstName" class="col-md-3 control-label"> First Name</label>
 						<div class="col-md-9">
@@ -28,11 +28,12 @@
 					<div class="form-group">
 						<label for="inputFileUpload" class="col-md-3 control-label"> File Upload</label>
 						<div class="col-md-9">
-							<div id="inputFileUpload">Upload</div>
-							<button type="submit" id="inputFileUpload">Upload</button>
+<!-- 							<div id="inputFileUpload">Upload</div>
+							<button type="submit" id="inputFileUpload">Upload</button> -->
+							<input type="file" id="inputFileUpload" class="file" name="upload_file" multiple="true">
 						</div>
 					</div>
-				</form> -->
+				</div>
 			</div>
 			<div class="col-md-5">
 				<div class="container">
@@ -47,30 +48,37 @@
 		</div>
 	</div>
 </div>
-<!-- 
+
 <script>
-// 	$(document).ready(function() {
-// 		$("#inputFileUpload").uploadFile({
-// 			url:"<?= $siteroot ?>/php/upload.php",
-// 			filename:"myfile",
-// 			allowedTypes:"pdf,doc,docx",
-// 			showProgress:true,
-// 			uploadButtonClass:"btn btn-primary",
-// 			uploadFolder:"<?= $pageroot ?>/upload/",
-// 			// onSubmit: function (files, xhr) {
-// 			// 	for (var i = files.length - 1; i >= 0; i--) {
-// 			// 		$("#inputLastName").val(files[i] + ",");
-// 			// 	};
-// 			// },
-// 			// onSuccess: function (files, response, xhr, pd) {
-// 			// 	for (var i = files.length - 1; i >= 0; i--) {
-// 			// 		$("#inputFirstName").val(response + ",");
-// 			// 	};
-// 			// },
-// 			// onError: function (files, status, message, pd) {
-// 			// 	$("#inputFirstName").val(message);
-// 			// }
-// 		});
-// 	});
+	$(document).ready(function() {
+		// $("#inputFileUpload").uploadFile({
+		// 	url:"<?= $siteroot ?>/php/upload.php",
+		// 	fileName:"upload_file",
+		// 	allowedTypes:"pdf,doc,docx",
+		// 	showProgress:true,
+		// 	uploadButtonClass:"btn btn-primary",
+		// 	uploadFolder:"<?= $pageroot ?>/upload/",
+		// 	onSuccess: function (files, response, xhr, pd) {
+		// 		for (var i = files.length - 1; i >= 0; i--) {
+		// 			$("#inputFirstName").val(response + ",");
+		// 		};
+		// 	},
+		// 	onError: function (files, status, message, pd) {
+		// 		$("#inputFirstName").val(message);
+		// 	}
+		// });
+		$("#inputFileUpload").fileinput({
+			uploadUrl: "<?= $siteroot ?>/php/upload.php",
+			showCaption: false,
+			showPreview: false,
+			allowedFileExtensions: ["zip", "rar", "gz", "tgz", "doc", "pdf", "docx"],
+			maxFilesNum: 10,
+			uploadExtraData: function() {
+				var exData = [];
+				exData['first_name'] = $("#inputFirstName").val();
+				exData['last_name'] = $("#inputLastName").val();
+				return exData;
+			}
+		});
+	});
 </script>
- -->
