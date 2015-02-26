@@ -54,7 +54,7 @@ if(isset($_FILES["upload_file"]))
 					$reterror = $reterror . $_FILES["upload_file"]["name"][$i] . "-" . codeToMessage($error[$i]) . "\n";
 				}
 			}
-			if ($reterror) != "") {
+			if (!($reterror == "")) {
 				# code...
 				throw new Exception($reterror, 999);
 			}
