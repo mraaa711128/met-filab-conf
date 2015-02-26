@@ -65,7 +65,7 @@
 		maxFileSize: 10240,
 		maxFilesNum: 5,
 		uploadExtraData: function() {
-			var exData = [];
+			var exData = {};
 			exData['first_name'] = $("#inputFirstName").val();
 			exData['last_name'] = $("#inputLastName").val();
 			return exData;
