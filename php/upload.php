@@ -1,5 +1,5 @@
 <?php
-include("rootpath.php");
+include("../rootpath.php");
 
 $output_dir = $pageroot . DS . "upload";
 
