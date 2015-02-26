@@ -31,6 +31,7 @@
 <!-- 							<div id="inputFileUpload">Upload</div>
 							<button type="submit" id="inputFileUpload">Upload</button> -->
 							<input type="file" id="inputFileUpload" class="file" name="upload_file" multiple="true">
+							<div id ="inputUploadError"></div>
 						</div>
 					</div>
 				</div>
@@ -52,16 +53,18 @@
 <script>
 	$("#inputFileUpload").fileinput({
 		uploadUrl: "<?= $siteroot ?>/php/upload.php",
-		showCaption: false,
+		showCaption: true,
 		showPreview: false,
 		allowedFileExtensions: ["zip", "rar", "gz", "tgz", "doc", "pdf", "docx"],
-		maxFilesNum: 10,
+		maxFileSize: 10240
+		maxFilesNum: 5,
 		uploadExtraData: function() {
 			var exData = [];
 			exData['first_name'] = $("#inputFirstName").val();
 			exData['last_name'] = $("#inputLastName").val();
 			return exData;
-		}
+		},
+		elErrorContainer: "#inputUploadError"
 	});
 
 	$(document).ready(function() {
