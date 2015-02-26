@@ -37,10 +37,10 @@ if(isset($_FILES["upload_file"]))
 		}
 	
 		if(!is_array($_FILES["upload_file"]["name"])) {	//single file
+			$fileName = $_FILES["upload_file"]["name"];
 			if ($error == 0) {
 				# code...
-		 	 	$fileName = $_FILES["upload_file"]["name"];
-		 	 	var_dump($fileName);
+		 	 	//var_dump($fileName);
 		 		move_uploaded_file($_FILES["upload_file"]["tmp_name"],$output_dir . DS . $fileDir . DS . time() . "_" . $fileName);
 		    	$ret[]= $fileName;
 			} else {
@@ -49,10 +49,10 @@ if(isset($_FILES["upload_file"]))
 		} else { //Multiple files, file[]
 			$fileCount = count($_FILES["upload_file"]["name"]);
 			for($i=0; $i < $fileCount; $i++) {
+				$fileName = $_FILES["upload_file"]["name"][$i];
 				if ($error[$i] == 0) {
 					# code...
-					$fileName = $_FILES["upload_file"]["name"][$i];
-					var_dump($fileName);
+					//var_dump($fileName);
 					move_uploaded_file($_FILES["upload_file"]["tmp_name"][$i],$output_dir . DS . $fileDir . DS . time() . "_" . $fileName);
 					$ret[]= $fileName;
 				} else {
