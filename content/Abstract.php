@@ -56,7 +56,7 @@
 		showCaption: true,
 		showPreview: false,
 		allowedFileExtensions: ["zip", "rar", "gz", "tgz", "doc", "pdf", "docx"],
-		maxFileSize: 10240
+		maxFileSize: 10240,
 		maxFilesNum: 5,
 		uploadExtraData: function() {
 			var exData = [];
