@@ -50,6 +50,20 @@
 </div>
 
 <script>
+	$("#inputFileUpload").fileinput({
+		uploadUrl: "<?= $siteroot ?>/php/upload.php",
+		showCaption: false,
+		showPreview: false,
+		allowedFileExtensions: ["zip", "rar", "gz", "tgz", "doc", "pdf", "docx"],
+		maxFilesNum: 10,
+		uploadExtraData: function() {
+			var exData = [];
+			exData['first_name'] = $("#inputFirstName").val();
+			exData['last_name'] = $("#inputLastName").val();
+			return exData;
+		}
+	});
+
 	$(document).ready(function() {
 		// $("#inputFileUpload").uploadFile({
 		// 	url:"<?= $siteroot ?>/php/upload.php",
@@ -67,18 +81,5 @@
 		// 		$("#inputFirstName").val(message);
 		// 	}
 		// });
-		$("#inputFileUpload").fileinput({
-			uploadUrl: "<?= $siteroot ?>/php/upload.php",
-			showCaption: false,
-			showPreview: false,
-			allowedFileExtensions: ["zip", "rar", "gz", "tgz", "doc", "pdf", "docx"],
-			maxFilesNum: 10,
-			uploadExtraData: function() {
-				var exData = [];
-				exData['first_name'] = $("#inputFirstName").val();
-				exData['last_name'] = $("#inputLastName").val();
-				return exData;
-			}
-		});
 	});
 </script>
