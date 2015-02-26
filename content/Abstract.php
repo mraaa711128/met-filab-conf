@@ -57,6 +57,8 @@
 </div>
 
 <script>
+	var canSelect = false;
+
 	$("#inputFileUpload").fileinput({
 		uploadUrl: "<?= $siteroot ?>/php/upload.php",
 		showCaption: true,
@@ -74,7 +76,9 @@
 	});
 
 	$("#inputFirstName").keypress(function() {
-		if ($(this).val() != "") {
+		canSelect = ($(this).val() != "") && ($("#inputLastName").val() != "");
+
+		if (canSelect) {
 			$("#inputFileUpload").fileinput('enable');
 		} else {
 			$("#inputFileUpload").fileinput('disable');
@@ -82,7 +86,9 @@
 	});
 
 	$("#inputLastName").keypress(function() {
-		if ($(this).val() != "") {
+		canSelect = ($(this).val() != "") && ($("#inputFirstName").val() != "");
+
+		if (canSelect) {
 			$("#inputFileUpload").fileinput('enable');
 		} else {
 			$("#inputFileUpload").fileinput('disable');

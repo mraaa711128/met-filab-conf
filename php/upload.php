@@ -19,8 +19,8 @@ if(isset($_FILES["upload_file"]))
 		$error =$_FILES["upload_file"]["error"];
 		//You need to handle  both cases
 		//If Any browser does not support serializing of multiple files using FormData() 
-		$firstName = $_FILES['upload_file']['firstname'];
-		$lastName = $_FILES['upload_file']['lastname'];
+		$firstName = $_POST['firstname'];
+		$lastName = $_POST['lastname'];
 		
 		if ($firstName == "" || $firstName == null) {
 			# code...
