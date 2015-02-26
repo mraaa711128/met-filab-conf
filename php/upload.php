@@ -1,5 +1,6 @@
 <?php
-$output_dir = "<?= $pageroot ?>/upload/";
+define('DS', DIRECTORY_SEPARATOR);
+$output_dir = "<?= $pageroot ?>/upload";
 if(isset($_FILES["upload_file"]))
 {
 	try {
@@ -25,33 +26,33 @@ if(isset($_FILES["upload_file"]))
 			# code...
 			$lastName = "none";
 		}
-		$fileDir = $firstName . "_" . $lastName . "/";
+		$fileDir = $firstName . "_" . $lastName;
 	
-		if (file_exists($output_dir . $fileDir) == false) {
-			mkdir($output_dir . $fileDir);
+		if (file_exists($output_dir . DS . $fileDir) == false) {
+			mkdir($output_dir . DS . $fileDir);
 		}
 	
 		if(!is_array($_FILES["upload_file"]["name"])) {	//single file
 			if ($error == 0) {
 				# code...
-		 	 	$fileName = $_FILES["upload_file"]["name"] . "-" . time();
+		 	 	$fileName = $_FILES["upload_file"]["name"];
 		 	 	var_dump($fileName);
-		 		move_uploaded_file($_FILES["upload_file"]["tmp_name"],$output_dir . $fileDir . $fileName);
+		 		move_uploaded_file($_FILES["upload_file"]["tmp_name"],$output_dir . DS . $fileDir . DS . time() . "_" . $fileName);
 		    	$ret[]= $fileName;
 			} else {
-				throw new Exception(codeToMessage($error), $error);
+				throw new Exception($fileName . "-" . codeToMessage($error), $error);
 			}
 		} else { //Multiple files, file[]
 			$fileCount = count($_FILES["upload_file"]["name"]);
 			for($i=0; $i < $fileCount; $i++) {
 				if ($error[$i] == 0) {
 					# code...
-					$fileName = $_FILES["upload_file"]["name"][$i] . "-" . time();
+					$fileName = $_FILES["upload_file"]["name"][$i];
 					var_dump($fileName);
-					move_uploaded_file($_FILES["upload_file"]["tmp_name"][$i],$output_dir . $fileDir . $fileName);
+					move_uploaded_file($_FILES["upload_file"]["tmp_name"][$i],$output_dir . DS . $fileDir . DS . time() . "_" . $fileName);
 					$ret[]= $fileName;
 				} else {
-					$reterror = $reterror . $_FILES["upload_file"]["name"][$i] . "-" . codeToMessage($error[$i]) . "\n";
+					$reterror = $reterror . $fileName . "-" . codeToMessage($error[$i]) . "\n";
 				}
 			}
 			if (!($reterror == "")) {
