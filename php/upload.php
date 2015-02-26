@@ -1,6 +1,8 @@
 <?php
-define('DS', DIRECTORY_SEPARATOR);
+include("rootpath.php");
+
 $output_dir = $pageroot . DS . "upload";
+
 if(isset($_FILES["upload_file"]))
 {
 	try {
