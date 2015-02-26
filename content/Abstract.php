@@ -30,7 +30,7 @@
 						<div class="col-md-9">
 <!-- 							<div id="inputFileUpload">Upload</div>
 							<button type="submit" id="inputFileUpload">Upload</button> -->
-							<input type="file" id="inputFileUpload" class="file" name="upload_file" multiple="true">
+							<input type="file" id="inputFileUpload" class="file" name="upload_file[]" multiple="true">
 							<div id ="inputUploadError"></div>
 						</div>
 					</div>
