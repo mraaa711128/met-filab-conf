@@ -12,10 +12,19 @@
 				<h3>Information about Abstract Submission</h3>
 			</div>
 			<div class="alert alert-warning" role="alert">
-				<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-		  		<span>Warning:</span>
-				<p>Only when you input your <strong>First Name and Last Name</strong>, then you can select files to upload !!</p>
-				<p>Each time you can have up to <strong>5 files</strong> upload, and each file can have up to <strong>10 MB</strong> file size !!</p>
+				<p><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+		  		<span class="sr-only">Warning:</span>
+				&nbsp&nbsp Only when you input your <strong>First Name and Last Name</strong>, then you can select files to upload !!</p>
+<!-- 			</div>
+			<div class="alert alert-warning" role="alert"> -->
+				<p><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+		  		<span class="sr-only">Warning:</span>
+				&nbsp&nbsp Each time you can have up to <strong>5 files</strong> upload, and each file can have up to <strong>10 MB</strong> file size !!</p>
+<!-- 			</div>
+			<div class="alert alert-warning" role="alert"> -->
+				<p><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+		  		<span class="sr-only">Warning:</span>
+				&nbsp&nbsp You can upload compressed file, such as <strong>*.zip,*.rar,*.gz,*.tgz</strong>. Or document file, such as <strong>*.doc,*.docx,*.pdf</strong> !!</p>
 			</div>
 			<div class="col-md-7">
 				<div class="form-horizontal">
