@@ -113,21 +113,27 @@
           <ul class="nav navbar-nav">
             <li class="<?= ($page == "Home" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Home">Home</a></li>
             <li class="<?= ($page == "Intro" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Intro">Introduction</a></li>
-            <li class="<?= ($page == "Announce" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Announce">Announce</a></li>
+            <li class="<?= ($page == "Announce" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Announce">Announcements</a></li>
             <li class="<?= ($page == "Schedule" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Schedule">Schedule</a></li>
-            <li class="<?= ($page == "Commitee" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Commitee">Commitee</a></li>
+            <li class="<?= ($page == "Commitee" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Commitee">Committee</a></li>
             <li class="<?= ($page == "Register" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Register">Registration</a></li>
-            <li class="<?= ($page == "Abstract" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Abstract">Abstract Submission</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Submission <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="<?= ($page == "Abstract" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Abstract">Abstract Submission</a></li>
+                <li class="<?= ($page == "Presentation" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Presentation">Presentation Submission</a></li>
+              </ul>
+            </li>
             <li class="<?= ($page == "Reservation" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Reservation">Hotel Reservation</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li class="dropdown-header">Conference ...</li>
                 <li class="<?= ($page == "Contact" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Contact">Contact Info</a></li>
-                <li><a href="<?= $siteroot ?>/index.php?page=Location">Location</a></li>
+                <li class="<?= ($page == "Location" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Location">Location</a></li>
                 <li><a href="http://www.metropol-ohrid.com.mk/EN/default.aspx" target="_blank">Hotel</a></li>
-                <li><a href="<?= $siteroot ?>/index.php?page=Ohrid">Ohrid</a></li>
-                <li><a href="<?= $siteroot ?>/index.php?page=Macedonia">Macedonia & Skopje</a></li>
+                <li class="<?= ($page == "Ohrid" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Ohrid">Ohrid</a></li>
+                <li class="<?= ($page == "Macedonia" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Macedonia">Macedonia & Skopje</a></li>
                 
                 <!--
                 <li><a href="<?= $siteroot ?>/index.php?page=Map">Tourism Map</a></li>
@@ -170,7 +176,7 @@
 
     <div class="container">
       <footer>
-        <p>&copy; Boston University FiLab 2014</p>
+        <p>&copy; Boston University Financial Informatics Lab 2015</p>
       </footer>
     </div>
     <!-- Bootstrap core JavaScript
