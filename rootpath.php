@@ -6,8 +6,10 @@
 	// if (substr_compare($serverhost,"www",0,3,false) == 0) {
 	// 	# code...
 	// 	$siteroot = "http://" . $serverhost . DS . "conference";
+	//	$pageroot = $_SERVER['DOCUMENT_ROOT'] . DS . "conference";
 	// } else {
 	// 	$siteroot = "http://" . $serverhost;
+	//	$pageroot = $_SERVER['DOCUMENT_ROOT'];
 	// }
 
 	$siteroot = "//localhost/met-filab-conf";
