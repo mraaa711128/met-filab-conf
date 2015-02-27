@@ -7,7 +7,7 @@
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
       -->
         <div class="imgcontainer">
-          <img src="<?= $siteroot ?>/img/conference4.png">
+          <img src="<?= $siteroot ?>/img/conferencebg.png">
 <!--           <h1>
             <span style="position: absolute; top: 0px; color: #1F69DF; ">Big Data </span>
             <span style="position: absolute; top: 0px; right: 0px; color: white; text-align: right;">Science & Economic Complex</span>
