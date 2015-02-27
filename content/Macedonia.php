@@ -7,30 +7,33 @@
 </div>
 <div class="container">
 	<div class="row">
-		<div class="col-xs-9">
-			<div class="col-xs-8">
-				<iframe width="550" height="500" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=Macedonia%20(FYROM)&zoom=8&language=en-us&key=AIzaSyAoTla3xGHrT7FMSbzLXCv30uyO0jvGeiA"></iframe>
+		<div class="col-md-9">
+			<div class="col-md-8">
+				<div class="container-fluid">
+					<iframe width="100%" height="500" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=Macedonia%20(FYROM)&zoom=8&language=en-us&key=AIzaSyAoTla3xGHrT7FMSbzLXCv30uyO0jvGeiA"></iframe>
+				</div>
 			</div>
-			<div class="col-xs-4">
+			<div class="col-md-4">
 				<div class="page-header">
 					<h4>Summary</h4>
 				</div>
-				<div class="container">
-					<h5>Description:</h5><span><p>Macedonia, officially the Republic of </p><p>Macedonia, is a country located in </p><p>Southease Europe.</p><p>It is a one of the successor states of the </p><p>former Yugosiavia, from which it declared </p><p>independence in 1991.</p></span>
+				<div class="container-fluid">
+					<h5>Description:</h5>Macedonia, officially the Republic of Macedonia, is a country located in Southease Europe. It is a one of the successor states of the former Yugosiavia, from which it declared independence in 1991.
 				</div>
-				<div class="container">
-					<h5>Area:</h5><span><p>9,779 square miles</p></span>
+				<div class="container-fluid">
+					<h5>Area:</h5>9,779 square miles
 				</div>
-				<div class="container">
-					<h5>Language:</h5><span><p>Macedonian</p></span>
+				<div class="container-fluid">
+					<h5>Language:</h5>Macedonian
 				</div>
-				<div class="container">
-					<h5>Regional Languages:</h5><span><p>Albanian, Turkish, Roma, Serbian</p></span>
+				<div class="container-fluid">
+					<h5>Regional Languages:</h5>Albanian, Turkish, Roma, Serbian
 				</div>
-				<div class="container">
-					<h5>Capital:</h5><span><p><a href="http://en.wikipedia.org/wiki/Skopje" target="_blank">Skopje</a></p></span>
+				<div class="container-fluid">
+					<h5>Capital:</h5><a href="http://en.wikipedia.org/wiki/Skopje" target="_blank">Skopje</a>
 				</div>
-				<div>
+				<div class="container-fluid">
+					<h5></h5>
 					<p><a class="btn btn-default" href="http://en.wikipedia.org/wiki/Republic_of_Macedonia" target="_blank" role="button">More »</a></p>
 				</div>
 			</div>
