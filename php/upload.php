@@ -21,6 +21,10 @@ if(isset($_FILES["upload_file"]))
 		//If Any browser does not support serializing of multiple files using FormData() 
 		$firstName = $_POST['firstname'];
 		$lastName = $_POST['lastname'];
+		$email = $_POST['email'];
+		$type = $_POST['type'];
+
+		$output_dir = $output_dir . DS . $type;
 		
 		if ($firstName == "" || $firstName == null) {
 			# code...

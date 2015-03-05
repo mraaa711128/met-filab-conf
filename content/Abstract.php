@@ -1,7 +1,7 @@
 <div class="jumbotron">
   <div class="container">
     <h1 class="page-header">Abstract Submission 2015</h1>
-    <p>We are very welcome to receive your abstract submission ! Please fill your first name and last name, and select the file you want to submit ! Thank you again !</p>
+    <p>We are very welcome to receive your abstract submission ! Please fill your first name, last name, and E-Mail, then select the file you want to submit ! Thank you again !</p>
     <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
   </div>
 </div>
@@ -41,6 +41,18 @@
 						</div>
 					</div>
 					<div class="form-group">
+						<label for="inputEmail" class="col-md-3 control-label"> E-Mail</label>
+						<div class="col-md-9">
+							<input type="text" class="form-control" id="inputEmail" placeholder="Last Name">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-md-9">
+							<input type="hidden" class="form-control" id="inputType" placeholder="" value="abstract">
+						</div>
+					</div>
+
+					<div class="form-group">
 						<label for="inputFileUpload" class="col-md-3 control-label"> File Upload</label>
 						<div class="col-md-9">
 <!-- 							<div id="inputFileUpload">Upload</div>
@@ -79,6 +91,8 @@
 			var exData = {};
 			exData["firstname"] = $("#inputFirstName").val();
 			exData["lastname"] = $("#inputLastName").val();
+			exData["email"] = $("#inputEmail").val();
+			exData["type"] = $("#inputType").val();
 			return exData;
 		},
 		elErrorContainer: "#inputUploadError"
