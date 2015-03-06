@@ -5,18 +5,18 @@
     <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
   </div>
 </div>
-<div class="container">
+<!-- <div class="container"> -->
 	<div class="row">
-		<div class="col-xs-9">
+		<div class="col-xs-12 col-md-9">
 			<div class="page-header">
 				<h3>Information about Hotel Reservation</h3>
 			</div>
-			<div class="col-xs-8">
+			<div class="col-xs-12 col-md-8">
 				<div class="imgcontainer">
 					<img src="<?= $siteroot ?>/img/hotel1.png">
 				</div>
 			</div>			
-			<div class="col-xs-4">
+			<div class="col-xs-12 col-md-4">
 				<div class="container">
 					<h4>Reservation Due Date</h4>
 					<span><p>June 1, 2015</p></span>
@@ -27,5 +27,10 @@
 				</div>
 			</div>
 		</div>
+		<div class="col-xs-12 col-md-3">
+	        <?php
+	          include($pageroot . "/content/AnnounceList.php");
+	        ?>
+		</div>
 	</div>
-</div>
+<!-- </div> -->

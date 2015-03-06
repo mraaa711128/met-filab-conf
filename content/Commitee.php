@@ -5,7 +5,8 @@
     <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
   </div>
 </div>
-<div class="container">
+<div class="row">
+    <div class="col-xs-12 col-md-9">
     <?php $arrMembers = read_member_list(4) ?>
     <?php for ($i=0; $i < count($arrMembers); $i++):
         $memberObj = read_member_content($arrMembers[$i]);
@@ -25,7 +26,7 @@
     <?php 
         }
     ?>
-		<div class="col-xs-5">
+		<div class="col-xs-12 col-md-6">
          	<img class="img-circle" src="<?= $siteroot?>/img/<?= $img ?>" alt="Generic placeholder image" style="width: 140px; height: 140px;">
          	<h2><?= $name ?></h2>
       		<p><?= $affiliation ?></p>
@@ -54,4 +55,11 @@
         }
     ?>
     <?php endfor; ?>
+        
+    </div>
+        <div class="col-xs-12 col-md-3">
+            <?php
+              include($pageroot . "/content/AnnounceList.php");
+            ?>
+        </div>
 </div>

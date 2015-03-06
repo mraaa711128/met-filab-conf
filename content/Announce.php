@@ -5,10 +5,10 @@
     <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
   </div>
 </div>
-<div class="container">
+<!-- <div class="container"> -->
 	<div class="row">
-		<div class="col-md-9">
-	       	<table class="table table-striped">
+		<div class="col-xs-12 col-md-9">
+	       	<table class="table table-striped" style="margin-top: 20px">
 	         	<thead>
 	              <tr>
 	                <th><h4>Subject</h4></th>
@@ -57,10 +57,15 @@
 	         	</tbody>
 	       	</table>
        	</div>
+		<div class="col-xs-12 col-md-3">
+	        <?php
+	          include($pageroot . "/content/AnnounceList.php");
+	        ?>
+		</div>
  	</div>
 <!--
  	<footer>
     	<p>&copy; Metropolitain FiLab 2014</p>
     </footer>
 -->
-</div>
+<!-- </div> -->

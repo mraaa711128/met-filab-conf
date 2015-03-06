@@ -5,20 +5,20 @@
     <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
   </div>
 </div>
-<div class="container">
+<!-- <div class="container"> -->
 	<div class="row">
-		<div class="col-xs-9">
+		<div class="col-xs-12 col-md-9">
 			<div class="page-header">
-				<h2>I have a Question about ...</h2ss>
+				<h3>Question about ...</h3>
 			</div>
-			<div class="col-xs-5 col-xs-offset-1">
+			<div class="col-xs-12 col-md-6">
 				<h3>Conference</h3>
 				<img class="img-circle" src="<?= $siteroot?>/img/irena.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
 				<br />
 	         	<br />
 	         	<p><a class="btn btn-default" style="width: 140px;" href="mailto:vodenska@bu.edu" role="button">e-mail »</a></p>
 			</div>
-			<div class="col-xs-5 col-xs-offset-1">
+			<div class="col-xs-12 col-md-6">
 				<h3>This Website</h3>
 				<img class="img-circle" src="<?= $siteroot?>/img/admin.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
 	         	<br />
@@ -26,5 +26,10 @@
 	         	<p><a class="btn btn-default" style="width: 140px;" href="mailto:mraaa@bu.edu" role="button">e-mail »</a></p>
 			</div>
 		</div>
+		<div class="col-xs-12 col-md-3">
+	        <?php
+	          include($pageroot . "/content/AnnounceList.php");
+	        ?>
+		</div>
 	</div>
-</div>
+<!-- </div> -->

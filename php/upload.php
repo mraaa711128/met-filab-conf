@@ -25,7 +25,7 @@ if(isset($_FILES["upload_file"]))
 		$type = $_POST['type'];
 
 		$output_dir = $output_dir . DS . $type;
-		
+
 		if ($firstName == "" || $firstName == null) {
 			# code...
 			$firstName = "none";
@@ -42,18 +42,24 @@ if(isset($_FILES["upload_file"]))
 	
 		if(!is_array($_FILES["upload_file"]["name"])) {	//single file
 			$fileName = $_FILES["upload_file"]["name"];
+		 	$fullFileName = $output_dir . DS . $fileDir . DS . time() . "_" . $fileName;
+		 	$fullContactName = $output_dir . DS . $fileDir . DS . "contact.txt";
 			if ($error == 0) {
 				# code...
 		 	 	//var_dump($fileName);
-		 		move_uploaded_file($_FILES["upload_file"]["tmp_name"],$output_dir . DS . $fileDir . DS . time() . "_" . $fileName);
+		 		move_uploaded_file($_FILES["upload_file"]["tmp_name"], $fullFileName);
+		 		file_put_contents($fullContactName, $email);
+
 		    	$ret[]= $fileName;
 			} else {
 				throw new Exception($fileName . "-" . codeToMessage($error), $error);
 			}
 		} else { //Multiple files, file[]
 			$fileCount = count($_FILES["upload_file"]["name"]);
+		 	$fullContactName = $output_dir . DS . $fileDir . DS . "contact.txt";
 			for($i=0; $i < $fileCount; $i++) {
 				$fileName = $_FILES["upload_file"]["name"][$i];
+			 	$fullFileName = $output_dir . DS . $fileDir . DS . time() . "_" . $fileName;
 				if ($error[$i] == 0) {
 					# code...
 					//var_dump($fileName);
@@ -63,6 +69,7 @@ if(isset($_FILES["upload_file"]))
 					$reterror = $reterror . $fileName . "-" . codeToMessage($error[$i]) . "\n";
 				}
 			}
+		 	file_put_contents($fullContactName, $email);
 			if (!($reterror == "")) {
 				# code...
 				throw new Exception($reterror, 999);
