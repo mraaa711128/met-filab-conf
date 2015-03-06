@@ -1,6 +1,6 @@
 <div class="jumbotron">
   <div class="container">
-    <h1 class="page-header">Organizing Commitee 2015</h1>
+    <h1 class="page-header">Organizing Committee 2015</h1>
     <p></p>
     <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
   </div>

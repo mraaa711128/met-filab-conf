@@ -70,7 +70,7 @@
     <meta name="author" content="">
     <link rel="icon" href="<?= $siteroot ?>/img/favicon.ico">
 
-    <title>BDS-ECS Conference</title>
+    <title>B.E.S.T. Conference</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?= $siteroot ?>/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -107,7 +107,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <div class="navbar-brand">BDS-ECS Conference</div>
+          <div class="navbar-brand">B.E.S.T. Conference</div>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
