@@ -1,7 +1,7 @@
 <div class="jumbotron">
   <div class="container">
-    <h1 class="page-header">Abstract Submission 2015</h1>
-    <p>We are very welcome to receive your abstract submission ! Please fill your first name, last name, and E-Mail, then select the file you want to submit ! Thank you again !</p>
+    <h1 class="page-header">Presentation Submission 2015</h1>
+    <p>We are very welcome to receive your presentation submission ! Please fill your first name, last name, and E-Mail, then select the file you want to submit ! Thank you again !</p>
     <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
   </div>
 </div>
@@ -9,12 +9,12 @@
 	<div class="row">
 		<div class="col-xs-12 col-md-9">
 			<div class="page-header">
-				<h3>Information about Abstract Submission</h3>
+				<h3>Information about Presentation Submission</h3>
 			</div>
 			<div class="alert alert-warning" role="alert">
 				<p><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
 		  		<span class="sr-only">Warning:</span>
-				&nbsp&nbsp Only when you input your <strong>First Name and Last Name</strong>, then you can select files to upload !!</p>
+				&nbsp&nbsp Only when you input your <strong>First Name, Last Name, and E-Mail</strong>, then you can select files to upload !!</p>
 <!-- 			</div>
 			<div class="alert alert-warning" role="alert"> -->
 				<p><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
@@ -24,7 +24,7 @@
 			<div class="alert alert-warning" role="alert"> -->
 				<p><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
 		  		<span class="sr-only">Warning:</span>
-				&nbsp&nbsp You can upload compressed file, such as <strong>*.zip,*.rar,*.gz,*.tgz</strong>. Or document file, such as <strong>*.doc,*.docx,*.pdf</strong> !!</p>
+				&nbsp&nbsp You can upload compressed file, such as <strong>*.zip,*.rar,*.gz,*.tgz</strong>. Or document file, such as <strong>*.ppt,*.pptx,*.pdf</strong> !!</p>
 			</div>
 			<div class="col-xs-12 col-md-7">
 				<div class="form-horizontal">
@@ -48,7 +48,7 @@
 					</div>
 					<div class="form-group">
 						<div class="col-md-9">
-							<input type="hidden" class="form-control" id="inputType" placeholder="" value="abstract">
+							<input type="hidden" class="form-control" id="inputType" placeholder="" value="presentation">
 						</div>
 					</div>
 
@@ -65,11 +65,11 @@
 			</div>
 			<div class="col-xs-12 col-md-5">
 				<div class="container">
-					<h4>Abstract Submission Start Date:</h4>
+					<h4>Presentation Submission Start Date:</h4>
 					<span><p>Soon ...</p></span>
 				</div>
 				<div class="container">
-					<h4>Abstract Submission Due Date:</h4>
+					<h4>Presentation Submission Due Date:</h4>
 					<span><p>May 1, 2015</p></span>
 				</div>
 			</div>
@@ -89,7 +89,7 @@
 		uploadUrl: "<?= $siteroot ?>/php/upload.php",
 		showCaption: true,
 		showPreview: false,
-		allowedFileExtensions: ["zip", "rar", "gz", "tgz", "doc", "pdf", "docx"],
+		allowedFileExtensions: ["zip", "rar", "gz", "tgz", "ppt", "pdf", "pptx"],
 		maxFileSize: 10240,
 		maxFilesNum: 5,
 		uploadExtraData: function() {

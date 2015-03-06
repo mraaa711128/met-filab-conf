@@ -11,14 +11,23 @@
 ?>
 <div class="jumbotron">
 	<div class="container">
-    	<div class="page-header" style="margin-bottom: 0px;">
-    		<h1><?= $subject ?></h1>
-    	</div>
-    	<h4>
-    		<?= "- by &nbsp;" . $author . " &nbsp;&nbsp;" . $date . " " . $time; ?>
-    	</h4>
+    	<h1 class="page-header">Announcement for BEST Conference 2015</h1>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12 col-md-9">
+		<h3 class="page-header"><?= $subject ?></h3>
     	<div class="well">
-        	<p><?= $content ?></p>
+        	<h4><?= $content ?></h4>
     	</div>
+    	<h5 class="page-footer">
+    		<?= "- by &nbsp;" . $author . " &nbsp;&nbsp;" . $date . " " . $time; ?>
+    	</h5>
+	</div>
+	<div class="col-xs-12 col-md-3">
+	    <?php
+	      include($pageroot . "/content/AnnounceList.php");
+	    ?>
 	</div>
 </div>

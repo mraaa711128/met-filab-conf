@@ -112,11 +112,8 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="<?= ($page == "Home" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Home">Home</a></li>
-            <li class="<?= ($page == "Intro" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Intro">Introduction</a></li>
-            <li class="<?= ($page == "Announce" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Announce">Announcements</a></li>
-            <li class="<?= ($page == "Schedule" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Schedule">Schedule</a></li>
+            <!-- <li class="<?= ($page == "Intro" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Intro">Introduction</a></li> -->
             <li class="<?= ($page == "Commitee" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Commitee">Committee</a></li>
-            <li class="<?= ($page == "Register" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Register">Registration</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Submission <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
@@ -124,7 +121,11 @@
                 <li class="<?= ($page == "Presentation" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Presentation">Presentation Submission</a></li>
               </ul>
             </li>
+            <li class="<?= ($page == "Register" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Register">Registration</a></li>
+            <li class="<?= ($page == "Schedule" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Schedule">Schedule</a></li>
             <li class="<?= ($page == "Reservation" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Reservation">Hotel Reservation</a></li>
+            <li class="<?= ($page == "Announce" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Announce">Announcements</a></li>
+            
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
@@ -151,8 +152,8 @@
     </nav>
 
     <div class="container">
-      <div class="row">
-      <div class="col-md-9">
+<!--       <div class="row">
+      <div class="col-md-9"> -->
         <!-- Include Content Php by Different Page -->
         <?php 
           if ($announce != "") {
@@ -163,13 +164,13 @@
             include($pageroot . "/content/" . $page . ".php");    
           }
         ?>
-      </div>
+<!--       </div>
       <div class="col-md-3">
         <?php
-          include($pageroot . "/content/AnnounceList.php");
+          // include($pageroot . "/content/AnnounceList.php");
         ?>
       </div>
-      </div>
+      </div> -->
     </div>
 
     <hr />

@@ -1,4 +1,4 @@
-<div class="jumbotron">
+<div class="panel-container">
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<h3 class="panel-title">Important Information</h3>
@@ -6,15 +6,15 @@
 		<div class="panel-body">
 			<div class="list-group">
 				<a href="#" class="list-group-item">
-					<h5 class="list-group-item-heading">Conference Date:</h5>
+					<h5 class="list-group-item-heading"><strong>Conference Date:</strong></h5>
 					<span class="list-group-item-text">July 20-22, 2015</span>
 				</a>
 				<a href="#" class="list-group-item">
-					<h5 class="list-group-item-heading">Abstract Submission Due Date:</h5>
+					<h5 class="list-group-item-heading"><strong>Abstract/Presentation<br />Submission Due Date:</strong></h5>
 					<span class="list-group-item-text">May 1, 2015</span>
 				</a>
 				<a href="#" class="list-group-item">
-					<h5 class="list-group-item-heading">Hotel Reservation Due Date:</h5>
+					<h5 class="list-group-item-heading"><strong>Hotel Reservation Due Date:</strong></h5>
 					<span class="list-group-item-text">June 1, 2015</span>
 				</a>
 			</div>
@@ -47,29 +47,5 @@
 	         	?>
 			</div>
 		</div>
-	</div>
-
-		            
-	         		<!--	
-	              <tr>
-	                <td><h5>Program start registering ...</h5></td>
-	                <td><h5>Admin</h5></td>
-	                <td><h5>2014-11-20</h5></td>
-	              </tr>
-	              <tr>
-	                <td><h5>System Testing 2 ...</h5></td>
-	                <td><h5>System Admin</h5></td>
-	                <td><h5>2014-11-20</h5></td>
-	              </tr>
-	              <tr>
-	                <td><h5>System testing 1 ...</h5></td>
-	                <td><h5>System Admin</h5></td>
-	                <td><h5>2014-11-19</h5></td>
-	              </tr>
-	              	-->
-<!--
- 	<footer>
-    	<p>&copy; Metropolitain FiLab 2014</p>
-    </footer>
--->
+	</div>		            
 </div>

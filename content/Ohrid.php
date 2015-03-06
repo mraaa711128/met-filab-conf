@@ -5,16 +5,16 @@
     <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
   </div>
 </div>
-<div class="container">
+<!-- <div class="container"> -->
 	<div class="row">
-		<div class="col-md-9">
+		<div class="col-xs-12 col-md-9">
 			<!-- <div class="row"> -->
-				<div class="col-md-8">
+				<div class="col-xs-12 col-md-8">
 					<div class="container-fluid">
 						<iframe width="100%" height="500" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=Ohrid%2C%20Macedonia%20(FYROM)&zoom=12&language=en-us&key=AIzaSyAoTla3xGHrT7FMSbzLXCv30uyO0jvGeiA"></iframe>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-xs-12 col-md-4">
 					<div class="page-header">
 						<h4>Summary</h4>
 					</div>
@@ -44,5 +44,10 @@
 				</div>
 			<!-- </div> -->
 		</div>
+		<div class="col-xs-12 col-md-3">
+	        <?php
+	          include($pageroot . "/content/AnnounceList.php");
+	        ?>
+		</div>
 	</div>
-</div>
+<!-- </div> -->
