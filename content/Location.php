@@ -8,9 +8,9 @@
 <!-- <div class="container"> -->
 	<div class="row">
 		<div class="col-xs-12 col-md-9">
-			<div class="page-header">
+<!-- 			<div class="page-header">
 				<h3>Information about Conference Location and Transportation</h3>
-			</div>
+			</div> -->
 			<div class="col-xs-12 col-md-8">
 				<div class="imgcontainer">
 					<iframe width="100%" height="500" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Metropol%20Lake%20Resort%2C%20Ohrid%2C%20Macedonia%20(FYROM)&zoom=15&language=en-us&key=AIzaSyAoTla3xGHrT7FMSbzLXCv30uyO0jvGeiA"></iframe>

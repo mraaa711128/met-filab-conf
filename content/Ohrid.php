@@ -15,7 +15,7 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-md-4">
-					<div class="page-header">
+					<div class="inner-page-header">
 						<h4>Summary</h4>
 					</div>
 					<div class="container-fluid">
