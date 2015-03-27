@@ -110,7 +110,7 @@
 			$("#inputFileUpload").fileinput('enable');
 		} else {
 			$("#inputFileUpload").fileinput('disable');
-		};
+		}
 	});
 
 	$("#inputLastName").keypress(function() {
@@ -120,7 +120,7 @@
 			$("#inputFileUpload").fileinput('enable');
 		} else {
 			$("#inputFileUpload").fileinput('disable');
-		};
+		}
 	});
 	
 	$("#inputEmail").keypress(function() {
@@ -130,7 +130,7 @@
 			$("#inputFileUpload").fileinput('enable');
 		} else {
 			$("#inputFileUpload").fileinput('disable');
-		};
+		}
 	});
 
 	$(document).ready(function() {
