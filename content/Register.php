@@ -1,7 +1,7 @@
 <div class="jumbotron">
   <div class="container">
     <h1 class="page-header">Conference Registration 2015</h1>
-    <p>We are still working on preparing a fatastic conference for you. We will start our registration very soon !</p>
+    <!-- <p>We are still working on preparing a fatastic conference for you. We will start our registration very soon !</p> -->
     <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
   </div>
 </div>
