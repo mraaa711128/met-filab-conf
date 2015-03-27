@@ -124,6 +124,7 @@
             <li class="<?= ($page == "Register" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Register">Registration</a></li>
             <li class="<?= ($page == "Schedule" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Schedule">Schedule</a></li>
             <li class="<?= ($page == "Reservation" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Reservation">Hotel Reservation</a></li>
+            <li class="<?= ($page == "Location" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Location">Travel</a></li>
             <li class="<?= ($page == "Announce" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Announce">Announcements</a></li>
             
             <li class="dropdown">
@@ -131,7 +132,6 @@
               <ul class="dropdown-menu" role="menu">
                 <li class="dropdown-header">Conference ...</li>
                 <li class="<?= ($page == "Contact" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Contact">Contact Info</a></li>
-                <li class="<?= ($page == "Location" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Location">Location</a></li>
                 <li><a href="http://www.metropol-ohrid.com.mk/EN/default.aspx" target="_blank">Hotel</a></li>
                 <li class="<?= ($page == "Ohrid" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Ohrid">Ohrid</a></li>
                 <li class="<?= ($page == "Macedonia" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Macedonia">Macedonia & Skopje</a></li>
@@ -180,6 +180,13 @@
         <p>&copy; Boston University Financial Informatics Lab 2015</p>
       </footer>
     </div>
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="container">
+            <img src="<?= $siteroot ?>/img/BU_Logo.jpg" style="width: 111px; height: 50px;">
+            <img src="<?= $siteroot ?>/img/KAIST_Logo.jpg" style="width: 111px; height: 50px;">
+            <img src="<?= $siteroot ?>/img/KU_Logo.jpg" style="width: 111px; height: 50px;">
+        </div>
+    </nav>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

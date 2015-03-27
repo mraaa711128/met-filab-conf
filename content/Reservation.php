@@ -17,13 +17,31 @@
 				</div>
 			</div>			
 			<div class="col-xs-12 col-md-4">
-				<div class="container">
+				<div class="page-header inner-page-header">
 					<h4>Reservation Due Date</h4>
-					<span><p>June 1, 2015</p></span>
 				</div>
 				<div class="container">
-					<h4>On-Line Reservation</h4>
-					<span><p>Metropol Lake Resort</p><p><a href="http://www.metropol-ohrid.com.mk/EN/reservations/room_reservation.aspx">Room Reservation</a></p></span>
+					<span><p><strong>June 1, 2015</strong></p></span>
+				</div>
+				<div class="page-header inner-page-header">
+					<h4>Reservation</h4>
+				</div>
+				<div class="container">
+					<span>
+						<p>Metropol Lake Resort</p>
+						<p>Please fill out the form (<strong><a href="#" target="_blank">Form Here</a></strong>)</p>
+						<p>Send to the following e-mail address:</p>
+						<p><strong><a href="mailto:sales@metropol-ohrid.com.mk">sales@metropol-ohrid.com.mk</a></strong></p>
+					</span>
+				</div>
+				<div class="page-header inner-page-header">
+					<h4>Contact Info</h4>
+				</div>
+				<div class="container">
+					<span>
+						<p>Tel: <strong><a href="tel:+389-46-203-001">+389-46-203-001</a> / <a href="tel:+389-46-277-660">+389-46-277-660</a></strong></p>
+						<p>Fax: <strong><a href="fax:+389-46-277-212">+389-46-277-212</a></strong></p>
+					</span>
 				</div>
 			</div>
 		</div>
