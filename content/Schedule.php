@@ -1,7 +1,7 @@
 <div class="jumbotron">
   <div class="container">
     <h1 class="page-header">Program and Schedule 2015</h1>
-    <p>We are still working on preparing a fatastic conference for you, the schedule will be coming soon !</p>
+    <p>Coming soon !</p>
     <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
   </div>
 </div>

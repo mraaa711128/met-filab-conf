@@ -22,7 +22,7 @@
 				</div>
 				<div class="container-fluid">
 					<!-- <h4>Location Detail</h4> -->
-					<h5>Title:</h5>Metropol Lake Resort &nbsp&nbsp&nbsp
+					<h5>Hotel:</h5>Metropol Lake Resort &nbsp&nbsp&nbsp
 					<h5>Address:</h5>Settlment Konjsko B.B. 6000 Ohrid, Macedonia
 					<h5>Tel: </h5><a href="tel:+389-46-203-001">+389-46-203-001</a> / <br> <a href="tel:+389-46-277-660">+389-46-277-660</a>
 					<h5>Fax: </h5><a href="fax:+389-46-277-212">+389-46-277-212</a>
