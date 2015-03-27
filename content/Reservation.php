@@ -8,22 +8,22 @@
 <!-- <div class="container"> -->
 	<div class="row">
 		<div class="col-xs-12 col-md-9">
-			<div class="page-header">
+<!-- 			<div class="page-header">
 				<h3>Information about Hotel Reservation</h3>
-			</div>
+			</div> -->
 			<div class="col-xs-12 col-md-8">
 				<div class="imgcontainer">
 					<img src="<?= $siteroot ?>/img/hotel1.png">
 				</div>
 			</div>			
 			<div class="col-xs-12 col-md-4">
-				<div class="page-header inner-page-header">
+				<div class="inner-page-header">
 					<h4>Reservation Due Date</h4>
 				</div>
 				<div class="container">
 					<span><p><strong>June 1, 2015</strong></p></span>
 				</div>
-				<div class="page-header inner-page-header">
+				<div class="inner-page-header">
 					<h4>Reservation</h4>
 				</div>
 				<div class="container">
@@ -34,7 +34,7 @@
 						<p><strong><a href="mailto:sales@metropol-ohrid.com.mk">sales@metropol-ohrid.com.mk</a></strong></p>
 					</span>
 				</div>
-				<div class="page-header inner-page-header">
+				<div class="inner-page-header">
 					<h4>Contact Info</h4>
 				</div>
 				<div class="container">
