@@ -17,7 +17,7 @@
 				</div>
 			</div>
 			<div class="xol-xs-12 col-md-4">
-				<div class="page-header inner-page-header">
+				<div class="inner-page-header">
 					<h4>Location Detail</h4>
 				</div>
 				<div class="container-fluid">
@@ -37,7 +37,7 @@
 				<div class="container-fluid">
 					<h5>Fax: </h5><a href="fax:+389-46-277-212">+389-46-277-212</a>
 				</div> -->
-				<div class="page-header inner-page-header">
+				<div class="inner-page-header">
 					<h4>Transportation</h4>
 				</div>
 				<div class="container-fluid">
