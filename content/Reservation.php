@@ -1,7 +1,7 @@
 <div class="jumbotron">
   <div class="container">
     <h1 class="page-header">Hotel Reservation 2015</h1>
-    <p>Our conference will take place in Metropol Lake Resort Ohrid. It is a very beautiful place which is nearby the most famous lake Ohrid in Macedonia.</p>
+    <!-- <p>Our conference will take place in Metropol Lake Resort Ohrid. It is a very beautiful place which is nearby the most famous lake Ohrid in Macedonia.</p> -->
     <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
   </div>
 </div>

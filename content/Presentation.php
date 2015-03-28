@@ -1,7 +1,7 @@
 <div class="jumbotron">
   <div class="container">
     <h1 class="page-header">Presentation Submission 2015</h1>
-    <p>We are very welcome to receive your presentation submission ! Please fill your first name, last name, and E-Mail, then select the file you want to submit ! Thank you again !</p>
+    <!-- <p>We are very welcome to receive your presentation submission ! Please fill your first name, last name, and E-Mail, then select the file you want to submit ! Thank you again !</p> -->
     <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
   </div>
 </div>
