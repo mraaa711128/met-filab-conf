@@ -127,14 +127,14 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="<?= ($page == "Home" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Home">Home</a></li>
-            <li class="dropdown">
+<!--             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Conference <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
+              <ul class="dropdown-menu" role="menu"> -->
                 <li class="<?= ($page == "Scope" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Scope">Scope</a></li>
                 <li class="<?= ($page == "Commitee" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Commitee">Committee</a></li>
                 <li class="<?= ($page == "Album" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Album">Album</a></li>
-              </ul>
-            </li>
+<!--               </ul>
+            </li> -->
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Submission <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
@@ -215,6 +215,8 @@
     <script src="<?= $siteroot ?>/js/ie10-viewport-bug-workaround.js"></script>
     <script type="text/javascript">
         $(function() {
+            $("body").css("padding-top",$("nav>div").height());
+            
             $(window).resize(function() {
                 $("body").css("padding-top",$("nav>div").height());
             });
