@@ -5,24 +5,24 @@
 		</div>
 		<div class="panel-body">
 			<div class="list-group">
-				<a href="#" class="list-group-item">
+				<div class="list-group-item">
 					<h5 class="list-group-item-heading"><strong>Conference Date:</strong></h5>
 					<span class="list-group-item-text">July 20-22, 2015</span>
-				</a>
-				<a href="#" class="list-group-item">
+				</div>
+				<div class="list-group-item">
 					<h5 class="list-group-item-heading"><strong>Abstract/Presentation<br />Submission Due Date:</strong></h5>
 					<span class="list-group-item-text">May 1, 2015</span>
-				</a>
-				<a href="#" class="list-group-item">
+				</div>
+				<div class="list-group-item">
 					<h5 class="list-group-item-heading"><strong>Hotel Reservation Due Date:</strong></h5>
 					<span class="list-group-item-text">June 1, 2015</span>
-				</a>
+				</div>
 			</div>
 		</div>
 	</div>
 	<div class="panel panel-default">
 		<div class="panel-heading">
-			<h3 class="panel-title">Latest Announcements</h3>
+			<h3 class="panel-title">Latest Announcement</h3>
 		</div>
 		<div class="panel-body">
 			<div class="list-group">
@@ -38,7 +38,8 @@
 	         				$file = str_replace(".txt", "", $arrAnnounces[$i]);
 	         	?>
 	         	<a class="list-group-item" href="<?= $siteroot ?>/index.php?page=Announce&announce=<?= $file ?>">
-					<h6 class="list-group-item-heading"><?= $subject . " " . $date; ?></h6>
+					<h5 class="list-group-item-heading"><?= $subject ?></h5>
+					<p><?= $date ?></p>
 <!-- 					<span class="list-group-item-text"><?= $date; ?></span> -->
 	         	</a>
 	         	<?php
