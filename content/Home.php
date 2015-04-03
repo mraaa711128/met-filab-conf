@@ -23,20 +23,6 @@
                 <a href="<?= $siteroot ?>/index.php?page=Scope">More...</a>
             </p>
         </div>
-<!--         <div class="col-xs-12 col-md-6">
-          <ul class="lead">
-              <li>Network Analysis Tools</li>
-              <li>Modeling and Simulations of Financial Networks</li>
-              <li>Financial Informatics</li>
-              <li>Data coverage and availability</li>
-              <li>Risk evaluation on various networks</li>
-              <li>New Internet infrastructure</li>
-              <li>Health informatics</li>
-              <li>Modeling of failure and recovery in coupled networks</li>
-              <li>Business cycles and crisis event analysis</li>
-              <li>Future tasks and prospects</li>
-          </ul>
-        </div> -->
     </div>
     <div class="col-xs-12 col-md-3">
         <?php
