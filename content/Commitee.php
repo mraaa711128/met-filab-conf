@@ -1,7 +1,7 @@
 <div class="jumbotron">
   <div class="container">
     <h1 class="page-header">Organizing Committee 2015</h1>
-    <p></p>
+    <!-- <p></p> -->
     <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
   </div>
 </div>
@@ -26,13 +26,13 @@
     <?php 
         }
     ?>
-		<div class="col-xs-12 col-md-6">
+		  <div class="col-xs-12 col-md-6">
          	<img class="img-circle" src="<?= $siteroot?>/img/<?= $img ?>" alt="Generic placeholder image" style="width: 140px; height: 140px;">
          	<h2><?= $name ?></h2>
       		<p><?= $affiliation ?></p>
-      		<br />
-         	<p><a class="btn btn-default" href="mailto:<?= $email ?>" role="button">E-Mail »</a></p>
-        </div>
+      		<p>Email: <a class="btn btn-link" href="mailto:<?= $email ?>" role="button"><?= $email ?></a></p>
+          <br />
+      </div>
     	<!--
         <div class="col-lg-4">
          	<img class="img-circle" src="" alt="Generic placeholder image" style="width: 140px; height: 140px;">

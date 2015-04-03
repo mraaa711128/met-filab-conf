@@ -19,7 +19,7 @@
 			<div class="alert alert-warning" role="alert"> -->
 				<p><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
 		  		<span class="sr-only">Warning:</span>
-				&nbsp&nbsp Each time you can have up to <strong>5 files</strong> upload, and each file can have up to <strong>10 MB</strong> file size !!</p>
+				&nbsp&nbsp Each time you can have up to <strong>5 files</strong> upload, and each file can have up to <strong>1 page</strong> !!</p>
 <!-- 			</div>
 			<div class="alert alert-warning" role="alert"> -->
 				<p><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
