@@ -19,10 +19,10 @@
 	<div class="col-xs-12 col-md-9">
 		<h3 class="page-header"><?= $subject ?></h3>
     	<div class="container-fluid">
-        	<p class="lead"><h4><strong><?= $content ?></strong></h4></p>
+        	<p class="lead"><strong><?= $content ?></strong></p>
     	</div>
     	<h5 class="page-footer">
-    		<?= "- by &nbsp;" . $author . " &nbsp;&nbsp;" . $date . " " . $time; ?>
+    		<?= "- post by &nbsp;" . $author . " &nbsp;&nbsp;" . $date . " " . $time; ?>
     	</h5>
 	</div>
 	<div class="col-xs-12 col-md-3">

@@ -1,5 +1,6 @@
 {
 	"Name":"Dimitar Trajanov",
+	"Image":"trajanov.jpg",
 	"Affiliation":"University of Sts. Cyril and Methodius, Skopje, Macedonia",
 	"Email":"dimitar.trajanov@finki.ukim.mk"
 }

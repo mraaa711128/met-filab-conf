@@ -38,8 +38,8 @@
 	         				$file = str_replace(".txt", "", $arrAnnounces[$i]);
 	         	?>
 	         	<a class="list-group-item" href="<?= $siteroot ?>/index.php?page=Announce&announce=<?= $file ?>">
-					<h5 class="list-group-item-heading"><?= $subject ?></h5>
-					<p><?= $date ?></p>
+					<h5 class="list-group-item-heading"><?= get_short_date($date); ?>:</h5>
+					<p><?= $subject ?></p>
 <!-- 					<span class="list-group-item-text"><?= $date; ?></span> -->
 	         	</a>
 	         	<?php

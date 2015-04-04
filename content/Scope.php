@@ -1,6 +1,8 @@
 <div class="jumbotron">
   <div class="container">
-    <h1 class="page-header">Scope 2015</h1>
+    <h1 class="page-header">
+        Scope of the BEST Conference 2015  
+    </h1>
   </div>
 </div>
 <div class="row">

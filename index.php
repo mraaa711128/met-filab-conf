@@ -6,6 +6,14 @@
   $member = $_GET["member"];
   $page = ($page == "" ? "Home" : $page);
 
+  function get_short_date($date) {
+    $arrDate = explode('-',$date);
+    $year = $arrDate[0];
+    $month = $arrDate[1];
+    $day = $arrDate[2];
+    return $month . "/" . $day . "/" . substr($year,2,2);
+  }
+
   function read_album_list($year) {
     $filepath = $GLOBALS["pageroot"] . "/assest/album/" . $year;
     $arrImages = scandir($filepath, SCANDIR_SORT_ASCENDING);
@@ -13,7 +21,7 @@
     $arrReturn = [];
     for ($i=0; $i < count($arrImages); $i++) { 
       $filename = $arrImages[$i];
-      if ($filename != ".." && $filename != "." && is_dir($filename) == false) {
+      if ($filename != ".." && $filename != "." && $filename != ".DS_Store" && is_dir($filename) == false) {
         array_push($arrReturn,$filename);
         $count++;
       }
@@ -122,7 +130,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <div class="navbar-brand">B.E.S.T. Conference</div>
+          <div class="navbar-brand">
+            B.E.S.T. Conference
+          </div>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -198,16 +208,26 @@
 
     <div class="container">
       <footer>
-        <p>&copy; Boston University Financial Informatics Lab 2015</p>
+        <div class="col-md-5">
+          <p style="padding-top: 10px;">&copy; Boston University Financial Informatics Lab 2015</p>
+        </div>
+        <div class="col-md-7">
+          <div class="imgcontainer">
+            <img src="<?= $siteroot ?>/img/BU_Logo_sm.jpg" style="width: 77px;">
+            <img src="<?= $siteroot ?>/img/KAIST_Logo_sm.jpg" style="width: 77px;">
+            <img src="<?= $siteroot ?>/img/KU_Logo_sm.jpg" style="width: 77px;">
+            <img src="<?= $siteroot ?>/img/FINKI_UKIM_EN_Logo_sm.jpg" style="width: 221px;">
+          </div>
+        </div>
       </footer>
     </div>
-    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+<!--     <nav class="navbar navbar-inverse navbar-fixed-bottom">
         <div class="container">
             <img src="<?= $siteroot ?>/img/BU_Logo.jpg" style="width: 111px; height: 50px;">
             <img src="<?= $siteroot ?>/img/KAIST_Logo.jpg" style="width: 111px; height: 50px;">
             <img src="<?= $siteroot ?>/img/KU_Logo.jpg" style="width: 111px; height: 50px;">
         </div>
-    </nav>
+    </nav> -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

@@ -1,11 +1,11 @@
 <div class="jumbotron">
   <div class="container">
-    <h1 class="page-header">Album 2015</h1>
+    <h1 class="page-header">Album of Ohrid, Macedonia</h1>
   </div>
 </div>
 
 <div class="row">
-	<div class="col-md-12">
+	<div class="col-md-8 col-md-offset-2">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		    <!-- Indicators -->
 <!-- 		    <ol class="carousel-indicators">

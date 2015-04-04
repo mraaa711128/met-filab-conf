@@ -1,6 +1,6 @@
 <div class="jumbotron">
   <div class="container">
-    <h1 class="page-header">Hotel Reservation 2015</h1>
+    <h1 class="page-header">Hotel Reservation of BEST Conference 2015</h1>
     <!-- <p>Our conference will take place in Metropol Lake Resort Ohrid. It is a very beautiful place which is nearby the most famous lake Ohrid in Macedonia.</p> -->
     <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
   </div>
@@ -21,7 +21,7 @@
 					<h4>Reservation Due Date</h4>
 				</div>
 				<div class="container">
-					<span><p><strong>June 1, 2015</strong></p></span>
+					<span><p><strong>June 15, 2015</strong></p></span>
 				</div>
 				<div class="inner-page-header">
 					<h4>Reservation</h4>

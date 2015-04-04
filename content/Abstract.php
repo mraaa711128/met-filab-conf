@@ -1,6 +1,6 @@
 <div class="jumbotron">
   <div class="container">
-    <h1 class="page-header">Abstract Submission 2015</h1>
+    <h1 class="page-header">Abstract Submission of BEST Conference 2015</h1>
     <!-- <p>We are very welcome to receive your abstract submission ! Please fill your first name, last name, and E-Mail, then select the file you want to submit ! Thank you again !</p> -->
     <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
   </div>
@@ -11,21 +11,17 @@
 			<div class="page-header">
 				<h3>Information about Abstract Submission</h3>
 			</div>
-			<div class="alert alert-warning" role="alert">
+<!-- 			<div class="alert alert-warning" role="alert">
 				<p><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
 		  		<span class="sr-only">Warning:</span>
 				&nbsp&nbsp Only when you input your <strong>First Name and Last Name</strong>, then you can select files to upload !!</p>
-<!-- 			</div>
-			<div class="alert alert-warning" role="alert"> -->
 				<p><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
 		  		<span class="sr-only">Warning:</span>
 				&nbsp&nbsp Each time you can have up to <strong>5 files</strong> upload, and each file can have up to <strong>1 page</strong> !!</p>
-<!-- 			</div>
-			<div class="alert alert-warning" role="alert"> -->
 				<p><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
 		  		<span class="sr-only">Warning:</span>
 				&nbsp&nbsp You can upload compressed file, such as <strong>*.zip,*.rar,*.gz,*.tgz</strong>. Or document file, such as <strong>*.doc,*.docx,*.pdf</strong> !!</p>
-			</div>
+			</div> -->
 			<div class="col-xs-12 col-md-7">
 				<div class="form-horizontal">
 					<div class="form-group">
@@ -66,11 +62,11 @@
 			<div class="col-xs-12 col-md-5">
 				<div class="container">
 					<h4>Abstract Submission Start Date:</h4>
-					<span><p>Soon ...</p></span>
+					<span><p>Apr 4, 2015</p></span>
 				</div>
 				<div class="container">
 					<h4>Abstract Submission Due Date:</h4>
-					<span><p>May 1, 2015</p></span>
+					<span><p>May 15, 2015</p></span>
 				</div>
 			</div>
 		</div>
@@ -89,9 +85,9 @@
 		uploadUrl: "<?= $siteroot ?>/php/upload.php",
 		showCaption: true,
 		showPreview: false,
-		allowedFileExtensions: ["zip", "rar", "gz", "tgz", "doc", "pdf", "docx"],
+		allowedFileExtensions: ["doc", "pdf", "docx"],
 		maxFileSize: 10240,
-		maxFilesNum: 5,
+		maxFilesNum: 1,
 		uploadExtraData: function() {
 			var exData = {};
 			exData["firstname"] = $("#inputFirstName").val();
@@ -103,53 +99,49 @@
 		elErrorContainer: "#inputUploadError"
 	});
 
-	$("#inputFirstName").keypress(function() {
-		canSelect = ($(this).val() != "") && ($("#inputLastName").val() != "") && ($("#inputEmail").val() != "");
-
-		if (canSelect) {
-			$("#inputFileUpload").fileinput('enable');
-		} else {
-			$("#inputFileUpload").fileinput('disable');
-		}
+	$("#inputFirstName").keyup(function() {
+		var validEmail = check_email($("#inputEmail").val());
+		canSelect = ($(this).val() != "") && ($("#inputLastName").val() != "") && (validEmail);
+		check_file_upload(canSelect);
 	});
 
-	$("#inputLastName").keypress(function() {
-		canSelect = ($(this).val() != "") && ($("#inputFirstName").val() != "") && ($("#inputEmail").val() != "");
-
-		if (canSelect) {
-			$("#inputFileUpload").fileinput('enable');
-		} else {
-			$("#inputFileUpload").fileinput('disable');
-		}
+	$("#inputLastName").keyup(function() {
+		var validEmail = check_email($("#inputEmail").val());
+		canSelect = ($(this).val() != "") && ($("#inputFirstName").val() != "") && (validEmail);
+		check_file_upload(canSelect);
 	});
 	
-	$("#inputEmail").keypress(function() {
-		canSelect = ($(this).val() != "") && ($("#inputFirstName").val() != "") && ($("#inputLastName").val() != "");
+	$("#inputEmail").keyup(function() {
+		var validEmail = check_email($("#inputEmail").val());
+		canSelect = (validEmail) && ($("#inputFirstName").val() != "") && ($("#inputLastName").val() != "");
+		check_file_upload(canSelect);
+	});
 
+	function check_email(email) {
+		var regEmail = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+		return email.match(regEmail);
+	}
+
+	function check_file_upload(canSelect) {
 		if (canSelect) {
+			$("#inputFileUpload").parent().parent().popover('destroy');
+			$("#inputFileUpload").parent().removeClass('btn-danger').addClass('btn-primary');
 			$("#inputFileUpload").fileinput('enable');
 		} else {
 			$("#inputFileUpload").fileinput('disable');
+			$("#inputFileUpload").parent().parent().popover({
+				animation: true,
+				content: 'Please enter your first name, last name and email first, and then you will be able to select a file.',
+				placement: 'bottom',
+				container: 'body',
+				title: 'Error:',
+				trigger: 'hover'
+			});
+			$("#inputFileUpload").parent().removeClass('btn-primary').addClass('btn-danger');
 		}
-	});
+	}
 
-	$(document).ready(function() {
-		$("#inputFileUpload").fileinput('disable');
-		// $("#inputFileUpload").uploadFile({
-		// 	url:"<?= $siteroot ?>/php/upload.php",
-		// 	fileName:"upload_file",
-		// 	allowedTypes:"pdf,doc,docx",
-		// 	showProgress:true,
-		// 	uploadButtonClass:"btn btn-primary",
-		// 	uploadFolder:"<?= $pageroot ?>/upload/",
-		// 	onSuccess: function (files, response, xhr, pd) {
-		// 		for (var i = files.length - 1; i >= 0; i--) {
-		// 			$("#inputFirstName").val(response + ",");
-		// 		};
-		// 	},
-		// 	onError: function (files, status, message, pd) {
-		// 		$("#inputFirstName").val(message);
-		// 	}
-		// });
+	$(function() {
+		check_file_upload(false);
 	});
 </script>
