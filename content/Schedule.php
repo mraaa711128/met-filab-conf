@@ -1,6 +1,6 @@
 <div class="jumbotron">
   <div class="container">
-    <h1 class="page-header">Program and Schedule 2015</h1>
+    <h1 class="page-header">Schedule of BEST Conference 2015</h1>
     <!-- <p>Coming soon !</p> -->
     <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
   </div>

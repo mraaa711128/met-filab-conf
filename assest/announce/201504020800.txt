@@ -1,9 +1,9 @@
 {
-	"Subject":"2015 B.E.S.T. Conference",
+	"Subject":"2015 B.E.S.T. Conference will be held in Ohrid, Macedonia",
 	"Date":"2015-04-02",
 	"Time":"08:00",
 	"Author":"System Admin",
-	"Content":"The 2015 BEST (Big data in Economics, Science, and Technology) conference to be held on July 20-22, in Ohrid, Macedonia."
+	"Content":"The 2015 BEST (Big data in Economics, Science, and Technology) conference will be held on July 20-22, in Ohrid, Macedonia."
 }
 
 

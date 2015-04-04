@@ -23,6 +23,22 @@
                 <a href="<?= $siteroot ?>/index.php?page=Scope">More...</a>
             </p>
         </div>
+        <div class="col-xs-12 col-md-4">
+            <a href="<?= $siteroot ?>/index.php?page=Album" class="thumbnail">
+                <img src="<?= $siteroot?>/assest/album/2015/ohrid-04.jpg" class="img-responsive" style="width: 210px;">
+            </a>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <a href="<?= $siteroot ?>/index.php?page=Album" class="thumbnail">
+                <img src="<?= $siteroot?>/assest/album/2015/ohrid-02.jpg" class="img-responsive" style="width: 236px;">
+            </a>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <a href="<?= $siteroot ?>/index.php?page=Album" class="thumbnail">
+                <img src="<?= $siteroot?>/assest/album/2015/ohrid-14.jpg" class="img-responsive" style="width: 245px;">
+            </a>
+        </div>
+
     </div>
     <div class="col-xs-12 col-md-3">
         <?php
