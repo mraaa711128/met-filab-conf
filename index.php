@@ -208,16 +208,16 @@
 
     <div class="container">
       <footer>
-        <div class="col-md-5">
+        <div class="col-md-5" style="text-align: center;">
           <p style="padding-top: 10px;">&copy; Boston University Financial Informatics Lab 2015</p>
         </div>
-        <div class="col-md-7">
-          <div class="imgcontainer">
+        <div class="col-md-7" style="text-align: center;">
+          <!-- <div class="container"> -->
             <img src="<?= $siteroot ?>/img/BU_Logo_sm.jpg" style="width: 77px;">
             <img src="<?= $siteroot ?>/img/KAIST_Logo_sm.jpg" style="width: 77px;">
             <img src="<?= $siteroot ?>/img/KU_Logo_sm.jpg" style="width: 77px;">
             <img src="<?= $siteroot ?>/img/FINKI_UKIM_EN_Logo_sm.jpg" style="width: 221px;">
-          </div>
+          <!-- </div> -->
         </div>
       </footer>
     </div>
