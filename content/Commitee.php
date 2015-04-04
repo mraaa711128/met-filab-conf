@@ -26,7 +26,7 @@
     <?php 
         }
     ?>
-		  <div class="col-xs-12 col-md-6">
+		  <div class="col-xs-12 col-sm-6" style="text-align: center;">
          	<img class="img-circle" src="<?= $siteroot?>/img/<?= $img ?>" alt="Generic placeholder image" style="width: 140px; height: 140px;">
          	<h2><?= $name ?></h2>
       		<p><?= $affiliation ?></p>
