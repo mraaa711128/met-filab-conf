@@ -1,6 +1,6 @@
 <div class="jumbotron">
   <div class="container">
-    <h1 class="page-header">Album of Ohrid, Macedonia</h1>
+    <h1 class="page-header">Gallery of Ohrid, Macedonia</h1>
   </div>
 </div>
 

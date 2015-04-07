@@ -142,7 +142,8 @@
               <ul class="dropdown-menu" role="menu"> -->
                 <li class="<?= ($page == "Scope" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Scope">Scope</a></li>
                 <li class="<?= ($page == "Commitee" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Commitee">Committee</a></li>
-                <li class="<?= ($page == "Album" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Album">Album</a></li>
+                <li class="<?= ($page == "ScienceCommitee" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=ScienceCommitee">Scientific Committee</a></li>
+                <li class="<?= ($page == "Album" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Album">Gallery</a></li>
 <!--               </ul>
             </li> -->
             <li class="dropdown">
@@ -154,15 +155,16 @@
             </li>
             <li class="<?= ($page == "Register" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Register">Registration</a></li>
             <li class="<?= ($page == "Schedule" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Schedule">Schedule</a></li>
+            <li class="<?= ($page == "Program" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Program">Program</a></li>
             <li class="<?= ($page == "Reservation" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Reservation">Hotel Reservation</a></li>
             <li class="<?= ($page == "Location" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Location">Travel</a></li>
             <li class="<?= ($page == "Announce" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Announce">Announcement</a></li>
-            
+            <li class="<?= ($page == "Contact" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Contact">Contact Info</a></li>
+                
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li class="dropdown-header">Conference ...</li>
-                <li class="<?= ($page == "Contact" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Contact">Contact Info</a></li>
                 <li><a href="http://www.metropol-ohrid.com.mk/EN/default.aspx" target="_blank">Hotel</a></li>
                 <li class="<?= ($page == "Ohrid" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Ohrid">Ohrid</a></li>
                 <li class="<?= ($page == "Macedonia" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Macedonia">Macedonia & Skopje</a></li>

@@ -19,13 +19,6 @@
             //$interests = $memberObj["Interests"];
         }
     ?>
-    <?php 
-        if ($i % 2 == 0) {            
-    ?>
-	<div class="row">
-    <?php 
-        }
-    ?>
 		  <div class="col-xs-12 col-sm-6" style="text-align: center;">
          	<img class="img-circle" src="<?= $siteroot?>/img/<?= $img ?>" alt="Generic placeholder image" style="width: 140px; height: 140px;">
          	<h2><?= $name ?></h2>
@@ -47,19 +40,12 @@
          	<p><a class="btn btn-default" href="#" role="button">details »</a></p>
         </div>
     	-->
-    <?php 
-        if ($i % 2 != 0) {            
-    ?>
-	</div>
-    <?php 
-        }
-    ?>
     <?php endfor; ?>
         
     </div>
-        <div class="col-xs-12 col-md-3">
-            <?php
-              include($pageroot . "/content/AnnounceList.php");
-            ?>
-        </div>
+    <div class="col-xs-12 col-md-3">
+        <?php
+          include($pageroot . "/content/AnnounceList.php");
+        ?>
+    </div>
 </div>
