@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <div class="jumbotron">
     <div class="imgcontainer">
-    <img src="<?= $siteroot ?>/img/conferencebanner.png">
+    <img src="<?= $siteroot ?>/img/conferencebanner2.png" class="img-responsive">
     </div>
 </div>
 <div class="row">
@@ -9,10 +9,7 @@
         <h2 class="page-header">
             Welcome to the 
             <strong>
-                <span style="color: red">B</span>
-                <span style="color: orange">E</span>
-                <span style="color: blue">S</span>
-                <span style="color: green">T</span>
+                <span style="color: red">B</span><span style="color: orange">E</span><span style="color: blue">S</span><span style="color: green">T</span>
             </strong>
              conference
         </h2>

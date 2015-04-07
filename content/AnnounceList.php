@@ -10,7 +10,7 @@
 					<span class="list-group-item-text">July 20-22, 2015</span>
 				</div>
 				<div class="list-group-item">
-					<h5 class="list-group-item-heading"><strong>Abstract/Presentation<br />Submission Due Date:</strong></h5>
+					<h5 class="list-group-item-heading"><strong>Abstract<br />Submission Due Date:</strong></h5>
 					<span class="list-group-item-text">May 15, 2015</span>
 				</div>
 				<div class="list-group-item">

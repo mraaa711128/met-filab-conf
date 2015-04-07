@@ -22,7 +22,7 @@
 		  		<span class="sr-only">Warning:</span>
 				&nbsp&nbsp You can upload compressed file, such as <strong>*.zip,*.rar,*.gz,*.tgz</strong>. Or document file, such as <strong>*.ppt,*.pptx,*.pdf</strong> !!</p>
 			</div> -->
-			<div class="col-xs-12 col-md-7">
+			<div class="col-xs-12 col-md-8 col-md-offset-2">
 				<div class="form-horizontal">
 					<div class="form-group">
 						<label for="inputFirstName" class="col-md-3 control-label"> First Name</label>
@@ -59,7 +59,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-12 col-md-5">
+<!-- 			<div class="col-xs-12 col-md-5">
 				<div class="container">
 					<h4>Presentation Submission Start Date:</h4>
 					<span><p>Apr 4, 2015</p></span>
@@ -68,7 +68,7 @@
 					<h4>Presentation Submission Due Date:</h4>
 					<span><p>May 15, 2015</p></span>
 				</div>
-			</div>
+			</div> -->
 		</div>
 		<div class="col-xs-12 col-md-3">
 	        <?php
