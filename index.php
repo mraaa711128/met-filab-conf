@@ -93,7 +93,7 @@
     <meta name="author" content="">
     <link rel="icon" href="<?= $siteroot ?>/img/favicon.ico">
 
-    <title>B.E.S.T. Conference</title>
+    <title>BEST Conference</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?= $siteroot ?>/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -131,21 +131,21 @@
             <span class="icon-bar"></span>
           </button>
           <div class="navbar-brand">
-            B.E.S.T. Conference
+            BEST Conference
           </div>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="<?= ($page == "Home" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Home">Home</a></li>
-<!--             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Conference <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu"> -->
-                <li class="<?= ($page == "Scope" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Scope">Scope</a></li>
-                <li class="<?= ($page == "Commitee" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Commitee">Committee</a></li>
+            <li class="<?= ($page == "Scope" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Scope">Scope</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Committee <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="<?= ($page == "Commitee" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Commitee">Organizing Committee</a></li>
                 <li class="<?= ($page == "ScienceCommitee" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=ScienceCommitee">Scientific Committee</a></li>
-                <li class="<?= ($page == "Album" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Album">Gallery</a></li>
-<!--               </ul>
-            </li> -->
+              </ul>
+            </li>
+            <li class="<?= ($page == "Album" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Album">Gallery</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Submission <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">

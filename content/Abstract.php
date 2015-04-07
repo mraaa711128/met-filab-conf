@@ -61,10 +61,6 @@
 			</div>
 			<div class="col-xs-12 col-md-5">
 				<div class="container">
-					<h4>Abstract Submission Start Date:</h4>
-					<span><p>Apr 4, 2015</p></span>
-				</div>
-				<div class="container">
 					<h4>Abstract Submission Due Date:</h4>
 					<span><p>May 15, 2015</p></span>
 				</div>
