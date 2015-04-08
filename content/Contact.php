@@ -11,14 +11,14 @@
 			<div class="page-header">
 				<h3>Question about ...</h3>
 			</div>
-			<div class="col-xs-12 col-md-6">
+			<div class="col-xs-12 col-md-6" style="text-align: center;">
 				<h3>Conference</h3>
 				<img class="img-circle" src="<?= $siteroot?>/img/irena.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
 				<br />
 	         	<br />
 	         	<p>Email: <a class="btn btn-link" style="width: 140px;" href="mailto:vodenska@bu.edu" role="button">vodenska@bu.edu</a></p>
 			</div>
-			<div class="col-xs-12 col-md-6">
+			<div class="col-xs-12 col-md-6" style="text-align: center;">
 				<h3>This Website</h3>
 				<img class="img-circle" src="<?= $siteroot?>/img/admin.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
 	         	<br />
