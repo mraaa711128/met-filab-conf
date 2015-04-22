@@ -35,7 +35,7 @@
 				<div class="container">
 					<span>
 						<p>Metropol Lake Resort</p>
-						<p>Please fill out the form (<strong><a href="<?= $siteroot ?>/img/room_reservation3.pdf" target="_blank">Form Here</a></strong>)</p>
+						<p>Please fill out the form (<strong><a href="<?= $siteroot ?>/img/room_reservation4.pdf" target="_blank">Form Here</a></strong>)</p>
 						<p>Send to the following e-mail address:</p>
 						<p><strong><a href="mailto:sales@metropol-ohrid.com.mk">sales@metropol-ohrid.com.mk</a></strong></p>
 					</span>
