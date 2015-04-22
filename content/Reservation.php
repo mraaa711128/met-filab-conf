@@ -23,13 +23,19 @@
 				<div class="container">
 					<span><p><strong>June 15, 2015</strong></p></span>
 				</div>
+<!-- 				<div class="inner-page-header">
+					<h4>Notice</h4>
+				</div>
+				<div class="container-fluid">
+					<strong><p>Half Board means that breakfast and lunch are included in the price !</p></strong>
+				</div> -->
 				<div class="inner-page-header">
 					<h4>Reservation</h4>
 				</div>
 				<div class="container">
 					<span>
 						<p>Metropol Lake Resort</p>
-						<p>Please fill out the form (<strong><a href="<?= $siteroot ?>/img/room_reservation2.pdf" target="_blank">Form Here</a></strong>)</p>
+						<p>Please fill out the form (<strong><a href="<?= $siteroot ?>/img/room_reservation3.pdf" target="_blank">Form Here</a></strong>)</p>
 						<p>Send to the following e-mail address:</p>
 						<p><strong><a href="mailto:sales@metropol-ohrid.com.mk">sales@metropol-ohrid.com.mk</a></strong></p>
 					</span>
