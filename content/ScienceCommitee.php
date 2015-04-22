@@ -9,7 +9,7 @@
     <div class="col-xs-12 col-md-9">
 		<div class="col-xs-12 col-sm-6" style="text-align: center;">
          	<!-- <img class="img-circle" src="<?= $siteroot?>/img/<?= $img ?>" alt="Generic placeholder image" style="width: 140px; height: 140px;"> -->
-         	<h2>Hiroshi Yietomi</h2>
+         	<h2>Hiroshi Iyetomi</h2>
       		<p>Niigata University, Japan</p>
       		<p>Email: <a class="btn btn-link" href="mailto:hiyetomi@gmail.com" role="button">hiyetomi@gmail.com</a></p>
           <br />
