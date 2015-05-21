@@ -139,7 +139,7 @@
             <li class="<?= ($page == "Home" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Home">Home</a></li>
             <li class="<?= ($page == "Scope" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Scope">Scope</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Committee <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Committees <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li class="<?= ($page == "Commitee" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Commitee">Organizing Committee</a></li>
                 <li class="<?= ($page == "ScienceCommitee" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=ScienceCommitee">Scientific Committee</a></li>
@@ -147,7 +147,7 @@
             </li>
             <li class="<?= ($page == "Album" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Album">Gallery</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Submission <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Submissions <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li class="<?= ($page == "Abstract" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Abstract">Abstract Submission</a></li>
                 <li class="<?= ($page == "Presentation" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Presentation">Presentation Submission</a></li>
