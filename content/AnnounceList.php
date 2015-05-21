@@ -11,7 +11,7 @@
 				</div>
 				<div class="list-group-item">
 					<h5 class="list-group-item-heading"><strong>Abstract<br />Submission Due Date:</strong></h5>
-					<span class="list-group-item-text">June 20, 2015</span>
+					<span class="list-group-item-text">June 30, 2015</span>
 				</div>
 				<div class="list-group-item">
 					<h5 class="list-group-item-heading"><strong>Hotel Reservation Due Date:</strong></h5>
