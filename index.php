@@ -157,7 +157,18 @@
             <li class="<?= ($page == "Schedule" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Schedule">Schedule</a></li>
             <li class="<?= ($page == "Program" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Program">Program</a></li>
             <li class="<?= ($page == "Reservation" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Reservation">Hotel Reservation</a></li>
-            <li class="<?= ($page == "Location" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Location">Travel</a></li>
+            <!-- <li class="<?= ($page == "Location" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Location">Travel</a></li> -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Travel <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="<?= ($page == "Location" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Location">Location</a></li>
+                <li>
+                  <a href="http://www.mfa.gov.mk/index.php/en/for-foreign-nationals/entry-visa-for-the-republic-of-macedonia/entry-visa-for-the-republic-of-macedonia" target="_blank">
+                    Check Visa Requirements for Macedonia
+                  </a>
+                </li>
+              </ul>
+            </li>
             <li class="<?= ($page == "Announce" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Announce">Announcement</a></li>
             <li class="<?= ($page == "Contact" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Contact">Contact Info</a></li>
                 
@@ -174,9 +185,9 @@
                 -->
                 <li class="divider"></li>
                 <li class="dropdown-header">More Info ...</li>
-                <li><a href="http://www.ohrid.com.mk/routes/routes.asp?ID=392" target = "_blank">Ohrid Tourism Official Website</a></li>
+                <li><a href="http://www.ohrid.com.mk/routes/routes.asp?ID=392" target="_blank">Ohrid Tourism Official Website</a></li>
                 <li><a href="http://www.skopje.gov.mk/en/" target="_blank">Skopje Official Website</a></li>
-                <li><a href="http://www.tourismmacedonia.gov.mk/en/" target = "_blank">Macedonia Tourism Official Website</a></li>
+                <li><a href="http://www.tourismmacedonia.gov.mk/en/" target="_blank">Macedonia Tourism Official Website</a></li>
               </ul>
             </li>
           </ul>
