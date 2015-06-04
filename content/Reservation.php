@@ -21,7 +21,7 @@
 					<h4>Reservation Due Date</h4>
 				</div>
 				<div class="container">
-					<span><p><strong>June 15, 2015</strong></p></span>
+					<span><p><strong>June 30, 2015</strong></p></span>
 				</div>
 <!-- 				<div class="inner-page-header">
 					<h4>Notice</h4>
