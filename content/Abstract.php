@@ -112,7 +112,7 @@
 		strSuccess += 'have been successfully uploaded. <br />';
 		strSuccess += 'You should hear about your paper acceptance by July 2nd, 2015 !';
 
-		$("#inputUploadSUccess").html('<div class="alert alert-success" role="alert">' + strSuccess + '</div>');
+		$("#inputUploadSuccess").html('<div class="alert alert-success" role="alert">' + strSuccess + '</div>');
 	});
 
 	$("#inputFirstName").keyup(function() {
