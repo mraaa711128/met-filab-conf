@@ -58,6 +58,10 @@
 						</div>
 					</div>
 				</div>
+
+				<div class="col-md-12" id="inputUploadSuccess">
+					
+				</div>
 			</div>
 			<div class="col-xs-12 col-md-5">
 				<div class="container">
@@ -93,6 +97,22 @@
 			return exData;
 		},
 		elErrorContainer: "#inputUploadError"
+	});
+
+	$("#inputFileUpload").on('fileuploaded', function(event, data, previewId, index) {
+		var form = data.form;
+		var files = data.files;
+		var extra = data.extra;
+
+		var strSuccess = "";
+
+		for (f in files) {
+			strSuccess += f + ',';
+		}
+		strSuccess += 'have been successfully uploaded. <br />';
+		strSuccess += 'You should hear about your paper acceptance by July 2nd, 2015 !';
+
+		$("#inputUploadSUccess").html('<div class="alert alert-success" role="alert">' + strSuccess + '</div>');
 	});
 
 	$("#inputFirstName").keyup(function() {
