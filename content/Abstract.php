@@ -104,10 +104,10 @@
 
 		var strSuccess = '';
 
-		strSuccess += 'Thank you for your submission. Your file has been successfully uploaded. <br />';
-		strSuccess += 'You should hear about your paper acceptance by July 2nd, 2015 !';
+		strSuccess += '<li>Thank you for your submission. Your file has been successfully uploaded.</li>';
+		strSuccess += '<li>You should hear about your paper acceptance by July 2nd, 2015 !</li>';
 
-		$("#inputUploadSuccess").html('<div class="alert alert-success" role="alert">' + strSuccess + '</div>');
+		$("#inputUploadSuccess").html('<div class="alert alert-success" role="alert"><ul class="text-left">' + strSuccess + '</ul></div>');
 	});
 
 	$("#inputFileUpload").on('filebrowse', function(event) {
