@@ -110,6 +110,11 @@
 		$("#inputUploadSuccess").html('<div class="alert alert-success" role="alert">' + strSuccess + '</div>');
 	});
 
+	$("#inputFileUpload").on('filebrowse', function(event) {
+		$("#inputUploadSuccess").html('');
+		$("#inputUploadError").html('');
+	});
+
 	$("#inputFirstName").keyup(function() {
 		var validEmail = check_email($("#inputEmail").val());
 		canSelect = ($(this).val() != "") && ($("#inputLastName").val() != "") && (validEmail);
