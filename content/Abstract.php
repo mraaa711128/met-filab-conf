@@ -106,12 +106,7 @@
 
 		var strSuccess = '';
 
-		console.log(files);
-
-		for (f in files) {
-			strSuccess += f + ',';
-		}
-		strSuccess += 'have been successfully uploaded. <br />';
+		strSuccess += 'Thank you for your submission. Your file has been successfully uploaded. <br />';
 		strSuccess += 'You should hear about your paper acceptance by July 2nd, 2015 !';
 
 		$("#inputUploadSuccess").html('<div class="alert alert-success" role="alert">' + strSuccess + '</div>');
