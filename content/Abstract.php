@@ -104,7 +104,9 @@
 		var files = data.files;
 		var extra = data.extra;
 
-		var strSuccess = "";
+		var strSuccess = '';
+
+		console.log(files);
 
 		for (f in files) {
 			strSuccess += f + ',';
