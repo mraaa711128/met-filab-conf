@@ -99,7 +99,7 @@
 		elErrorContainer: "#inputUploadError"
 	});
 
-	$("#inputFileUpload").on('fileuploaded', function(event, data, previewId, index) {
+	$("#inputFileUpload").on('filebatchuploadsuccess', function(event, data, previewId, index) {
 		var form = data.form;
 		var files = data.files;
 		var extra = data.extra;
