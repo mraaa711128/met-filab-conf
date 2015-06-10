@@ -54,14 +54,12 @@
 <!-- 							<div id="inputFileUpload">Upload</div>
 							<button type="submit" id="inputFileUpload">Upload</button> -->
 							<input type="file" id="inputFileUpload" class="file" name="upload_file[]" multiple="true">
-							<div id ="inputUploadError"></div>
+							
 						</div>
 					</div>
 				</div>
-
-				<div class="col-md-12" id="inputUploadSuccess">
-					
-				</div>
+				<div class="col-md-12" id ="inputUploadError"></div>
+				<div class="col-md-12" id="inputUploadSuccess"></div>
 			</div>
 			<div class="col-xs-12 col-md-5">
 				<div class="container">
