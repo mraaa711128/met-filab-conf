@@ -54,10 +54,12 @@
 <!-- 							<div id="inputFileUpload">Upload</div>
 							<button type="submit" id="inputFileUpload">Upload</button> -->
 							<input type="file" id="inputFileUpload" class="file" name="upload_file[]" multiple="true">
-							<div id ="inputUploadError"></div>
+							
 						</div>
 					</div>
 				</div>
+				<div class="col-md-12" id ="inputUploadError"></div>
+				<div class="col-md-12" id="inputUploadSuccess"></div>
 			</div>
 <!-- 			<div class="col-xs-12 col-md-5">
 				<div class="container">
@@ -97,6 +99,23 @@
 			return exData;
 		},
 		elErrorContainer: "#inputUploadError"
+	});
+
+	$("#inputFileUpload").on('filebatchuploadsuccess', function(event, data, previewId, index) {
+		var form = data.form;
+		var files = data.files;
+		var extra = data.extra;
+
+		var strSuccess = '';
+
+		strSuccess += '<li>Thank you for your submission. Your file has been successfully uploaded.</li>';
+		
+		$("#inputUploadSuccess").html('<div class="alert alert-success" role="alert"><ul class="text-left">' + strSuccess + '</ul></div>');
+	});
+
+	$("#inputFileUpload").on('filebrowse', function(event) {
+		$("#inputUploadSuccess").html('');
+		$("#inputUploadError").html('');
 	});
 
 	$("#inputFirstName").keyup(function() {

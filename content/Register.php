@@ -7,7 +7,7 @@
 </div>
 <div class="row">
 	<div class="col-xs-12 col-md-9">
-		<iframe src="https://docs.google.com/forms/d/1izF0h86rQ8ut8ytiDVnzZTZgaWF0meXP6lhXEd42gSE/viewform?embedded=true" height="1070" frameborder="0" marginheight="0" marginwidth="0" style="width: 100%">Loading...</iframe>
+		<iframe src="https://docs.google.com/forms/d/1izF0h86rQ8ut8ytiDVnzZTZgaWF0meXP6lhXEd42gSE/viewform?embedded=true" height="2048" frameborder="0" marginheight="0" marginwidth="0" style="width: 100%">Loading...</iframe>
 	</div>
 	<div class="col-xs-12 col-md-3">
 	    <?php
