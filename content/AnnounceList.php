@@ -9,7 +9,7 @@
 					<h5 class="list-group-item-heading">06/17/15</h5>
 					<p>The BEST conference will be opened by 
 						<a href="http://vlada.mk/node/282?language=en-gb" target="_blank">Dr. Zoran Jolevski</a>
-						, Minister of Defense of the Republic of Macedonia !!
+						, Minister of Defense of the Republic of Macedonia, Professor of International Economics at the European University in Skopje, Macedonia, and former Ambassador of the Republic of Macedonia to the United States.
 					</p>
 	         	</div>
          		<?php 

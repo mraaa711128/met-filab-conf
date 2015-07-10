@@ -13,18 +13,30 @@
 		</div>
 		<div class="container-fluid">
 			<div class="inner-page-header">
-				<h4>Sunday, July 19, 2015 </h4>
+				<h4>July 19 (Sun.), 2015 </h4>
 			</div>
 			<div class="container-fluid">
-				<p class="lead">Bus transportation from Skopje to Ohrid conference venue. Time table will be announced soon ... </p>
+				<p class="lead">
+					Bus transportation from Skopje to Ohrid conference venue. Time table will be adjusted based on individual participant arrival times. Please send your flight itineraries to 
+					<strong>
+						<a href="mailto:vodenska@bu.edu">vodenska@bu.edu</a>
+					</strong>
+					.
+				</p>
 			</div>
 			<div class="inner-page-header">
-				<h4>Monday, July 20, 2015 </h4>
+				<h4>July 20 (Mon.) - July 22 (Wed.), 2015 </h4>
 			</div>
 			<div class="container-fluid">
-				<p class="lead">Conference, dinner at a traditional Macedonian restaurant with organized transportation.</p>
+				<p class="lead">
+					Conference at the Hotel Metropol at Lake Ohrid, Macedonia. The detail program schedule is available to download 
+					<strong>
+						<a href="<?= $siteroot ?>/img/BEST_Conference_Program.pdf" target="_blank">Here</a>
+					</strong> 
+					.
+				</p>
 			</div>
-			<div class="inner-page-header">
+<!-- 			<div class="inner-page-header">
 				<h4>Tuesday, July 21, 2015 </h4>
 			</div>
 			<div class="container-fluid">
@@ -36,11 +48,11 @@
 			<div class="container-fluid">
 				<p class="lead">Conference, last day of the conference, historical Ohrid site seeing.</p>
 			</div>
-			<div class="inner-page-header">
-				<h4>Thursday, July 23, 2015 </h4>
+ -->			<div class="inner-page-header">
+				<h4>July 23 (Thu.), 2015 </h4>
 			</div>
 			<div class="container-fluid">
-				<p class="lead">Bus transportation from Ohrid to Skopje. Time table to be announced soon ... </p>
+				<p class="lead">Bus transportation from Ohrid to Skopje. Time table will be adjusted based on individual participant departure times !</p>
 			</div>
 		</div>
 	</div>

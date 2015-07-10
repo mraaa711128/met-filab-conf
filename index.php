@@ -155,7 +155,7 @@
             </li>
             <li class="<?= ($page == "Register" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Register">Registration</a></li>
             <li class="<?= ($page == "Schedule" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Schedule">Schedule</a></li>
-            <li class="<?= ($page == "Program" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Program">Program</a></li>
+            <li class="<?= ($page == "Program" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Program">Extra Program</a></li>
             <li class="<?= ($page == "Reservation" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Reservation">Hotel Reservation</a></li>
             <!-- <li class="<?= ($page == "Location" ? "active" : ""); ?>"><a href="<?= $siteroot ?>/index.php?page=Location">Travel</a></li> -->
             <li class="dropdown">

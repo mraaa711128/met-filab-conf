@@ -1,0 +1,9 @@
+{
+	"Subject":"The detail program schedule of 2015 BEST Conference has announced.",
+	"Date":"2015-07-10",
+	"Time":"08:00",
+	"Author":"System Admin",
+	"Content":"The program schedule of 2015 BEST Conference has announced and is available to download <a href='<?= $siteroot ?>/img/BEST_Conference_Program.pdf' target='_blank'>Here</a> !!"
+}
+
+
