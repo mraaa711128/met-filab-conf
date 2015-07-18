@@ -29,10 +29,14 @@
 			</div>
 			<div class="container-fluid">
 				<p class="lead">
-					Conference at the Hotel Metropol at Lake Ohrid, Macedonia. The detail program schedule is available to download 
-					<strong>
-						<a href="<?= $siteroot ?>/img/BEST_Conference_Program.pdf" target="_blank">Here</a>
-					</strong> 
+					Conference at the Hotel Metropol at Lake Ohrid, Macedonia. The detail program and additional program schedules are available to download 
+					(<strong>
+						<a href="<?= $siteroot ?>/img/BEST_Conference_Program_v4.pdf" target="_blank">Program Schedule</a> 
+					</strong>)
+					and 
+					(<strong>
+						<a href="<?= $siteroot ?>/img/BEST_Conference_Additional_Program_v3.pdf" target="_blank">Additional Program Schedule</a> 
+					</strong>)
 					.
 				</p>
 			</div>
