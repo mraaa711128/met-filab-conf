@@ -1,9 +1,9 @@
 {
-	"Subject":"The detail program schedule of 2015 BEST Conference has announced.",
+	"Subject":"The detailed program and additional program schedules of 2015 BEST Conference have been announced.",
 	"Date":"2015-07-10",
 	"Time":"08:00",
 	"Author":"System Admin",
-	"Content":"The program and additional program schedules of 2015 BEST Conference has announced and are available to download <a href='http://conference.met-filab.org/img/BEST_Conference_Program_v4.pdf' target='_blank'>Program Schedule</a> and <a href='http://conference.met-filab.org/img/BEST_Conference_Additional_Program_v3.pdf' target='_blank'>Additional Program Schedule</a> ."
+	"Content":"The detailed program and additional program schedules of 2015 BEST Conference have been announced and are available to download <a href='http://conference.met-filab.org/img/BEST_Conference_Program_v5.pdf' target='_blank'>Program Schedule</a> and <a href='http://conference.met-filab.org/img/BEST_Conference_Additional_Program_v3.pdf' target='_blank'>Additional Program Schedule</a> ."
 }
 
 

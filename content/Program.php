@@ -53,7 +53,7 @@
 					</div>
 					<div class="col-sm-5">
 						<p class="lead">
-							Official COnference Opening and Session 1
+							Official Conference Opening and Session 1
 						</p>
 					</div>
 				</div>

@@ -29,9 +29,9 @@
 			</div>
 			<div class="container-fluid">
 				<p class="lead">
-					Conference at the Hotel Metropol at Lake Ohrid, Macedonia. The detail program and additional program schedules are available to download 
+					Conference at the Hotel Metropol at Lake Ohrid, Macedonia. The detailed program and additional program schedules are available to download 
 					(<strong>
-						<a href="<?= $siteroot ?>/img/BEST_Conference_Program_v4.pdf" target="_blank">Program Schedule</a> 
+						<a href="<?= $siteroot ?>/img/BEST_Conference_Program_v5.pdf" target="_blank">Program Schedule</a> 
 					</strong>)
 					and 
 					(<strong>
